@@ -1,0 +1,43 @@
+params,mae_validacao,base,modelo
+"{'order': (1, 1, 0), 'seasonal_order': (0, 1, 1, 52)}",894.2533788457885,vendas_semanais,SARIMAX
+"{'order': (0, 1, 0), 'seasonal_order': (0, 1, 1, 52)}",894.2822464653697,vendas_semanais,SARIMAX
+"{'order': (2, 1, 0), 'seasonal_order': (0, 1, 1, 52)}",895.3497448436073,vendas_semanais,SARIMAX
+"{'order': (2, 1, 1), 'seasonal_order': (0, 1, 1, 52)}",897.0102306094992,vendas_semanais,SARIMAX
+"{'order': (0, 1, 1), 'seasonal_order': (0, 1, 1, 52)}",897.0749636801467,vendas_semanais,SARIMAX
+"{'order': (2, 1, 2), 'seasonal_order': (0, 1, 1, 52)}",897.1293848102891,vendas_semanais,SARIMAX
+"{'order': (1, 1, 2), 'seasonal_order': (0, 1, 1, 52)}",897.1572780079587,vendas_semanais,SARIMAX
+"{'order': (0, 1, 2), 'seasonal_order': (0, 1, 1, 52)}",897.2143686942785,vendas_semanais,SARIMAX
+"{'order': (1, 1, 1), 'seasonal_order': (0, 1, 1, 52)}",897.2309696325859,vendas_semanais,SARIMAX
+"{'trend': 'add', 'seasonal': 'add', 'damped': False}",27.33503148434468,vendas_semanais,Holt-Winters
+"{'trend': None, 'seasonal': 'add', 'damped': False}",28.287741024066147,vendas_semanais,Holt-Winters
+"{'trend': 'add', 'seasonal': 'add', 'damped': True}",28.603904978969908,vendas_semanais,Holt-Winters
+"{'trend': 'add', 'seasonal': 'mul', 'damped': False}",31.08055173179498,vendas_semanais,Holt-Winters
+"{'trend': None, 'seasonal': 'mul', 'damped': False}",31.321414473040274,vendas_semanais,Holt-Winters
+"{'trend': 'add', 'seasonal': 'mul', 'damped': True}",34.312729109518536,vendas_semanais,Holt-Winters
+"{'trend': 'add', 'seasonal': None, 'damped': True}",43.93506015967011,vendas_semanais,Holt-Winters
+"{'trend': None, 'seasonal': None, 'damped': False}",46.10214489014751,vendas_semanais,Holt-Winters
+"{'trend': 'add', 'seasonal': None, 'damped': False}",46.307021585698685,vendas_semanais,Holt-Winters
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 0.5, 'min_samples_leaf': 1, 'min_samples_split': 2}",42.59265634781032,vendas_semanais,Random Forest
+"{'n_estimators': 600, 'max_depth': None, 'max_features': 0.5, 'min_samples_leaf': 1, 'min_samples_split': 2}",42.83809373467602,vendas_semanais,Random Forest
+"{'n_estimators': 300, 'max_depth': 12, 'max_features': 0.5, 'min_samples_leaf': 1, 'min_samples_split': 2}",42.93525641223997,vendas_semanais,Random Forest
+"{'n_estimators': 300, 'max_depth': None, 'max_features': 0.5, 'min_samples_leaf': 1, 'min_samples_split': 2}",42.9779387736585,vendas_semanais,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 0.5, 'min_samples_leaf': 1, 'min_samples_split': 2}",43.11296684187064,vendas_semanais,Random Forest
+"{'n_estimators': 300, 'max_depth': 6, 'max_features': 0.5, 'min_samples_leaf': 1, 'min_samples_split': 2}",43.51167535359681,vendas_semanais,Random Forest
+"{'n_estimators': 300, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2}",46.08919378138207,vendas_semanais,Random Forest
+"{'n_estimators': 300, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2}",46.64047055347672,vendas_semanais,Random Forest
+"{'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2}",46.73763680733642,vendas_semanais,Random Forest
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2}",46.80650909985826,vendas_semanais,Random Forest
+"{'n_estimators': 300, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2}",47.0937389959596,vendas_semanais,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2}",47.27758063133259,vendas_semanais,Random Forest
+{'n_components': 10},28.82104172446205,vendas_semanais,PLS
+{'n_components': 6},28.83549162271315,vendas_semanais,PLS
+{'n_components': 9},28.88627340611414,vendas_semanais,PLS
+{'n_components': 7},29.202833867487943,vendas_semanais,PLS
+{'n_components': 8},29.318759091478825,vendas_semanais,PLS
+{'n_components': 11},29.32958583801816,vendas_semanais,PLS
+{'n_components': 5},29.401107856863018,vendas_semanais,PLS
+{'n_components': 12},30.261944789528105,vendas_semanais,PLS
+{'n_components': 4},32.08005673925013,vendas_semanais,PLS
+{'n_components': 3},33.70066581408773,vendas_semanais,PLS
+{'n_components': 1},43.841715517075066,vendas_semanais,PLS
+{'n_components': 2},44.186522855091205,vendas_semanais,PLS

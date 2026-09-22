@@ -1,0 +1,6 @@
+base,obs,h,m,forca_sazonal,m_ideal,d,D,conhecidas,defasadas,removidas,treino,validacao,teste
+delhi_temperatura,1575,7,30,0.271,365,1,0,-,"humidity, wind_speed, meanpressure",-,772,331,472
+pilgrims_close,9751,5,1,-0.006,52,1,0,-,"Low, Volume","Open, High",4778,2048,2925
+microsoft_open,1510,1,30,0.201,252,1,0,-,-,-,740,317,453
+sales_profit,2039,7,12,0.156,12,1,0,-,transaction_count,order_quantity,999,428,612
+brasil_vitorias,109,1,4,0.345,4,1,0,-,"matches_played, friendly_matches",-,53,23,33

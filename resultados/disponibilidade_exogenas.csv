@@ -1,0 +1,14 @@
+base,exogena,papel,disponivel_na_origem,como_entra,r,p_valor,significativa,VIF,decisao
+brasil_vitorias,friendly_matches_lag_1,defasada,nao,defasada em h,0.3927,0.00045,True,2.73,mantida
+brasil_vitorias,matches_played_lag_1,defasada,nao,defasada em h,0.3751,0.000842,True,2.73,mantida
+delhi_temperatura,humidity_lag_7,defasada,nao,defasada em h,-0.5328,0.0,True,1.27,mantida
+delhi_temperatura,meanpressure_lag_7,defasada,nao,defasada em h,-0.8436,0.0,True,1.2,mantida
+delhi_temperatura,wind_speed_lag_7,defasada,nao,defasada em h,0.3325,0.0,True,1.2,mantida
+microsoft_open,close_lag_1,conhecida,sim,valor da propria data,0.9996,0.0,True,1.01,mantida
+microsoft_open,volume_lag_1,conhecida,sim,valor da propria data,-0.1106,0.000314,True,1.01,mantida
+pilgrims_close,Low_lag_5,defasada,nao,defasada em h,0.995,0.0,True,1.09,mantida
+pilgrims_close,Volume_lag_5,defasada,nao,defasada em h,0.2938,0.0,True,1.09,mantida
+pilgrims_close,High_lag_5,defasada,nao,defasada em h,0.9949,0.0,True,1134.6,removida
+pilgrims_close,Open_lag_5,defasada,nao,defasada em h,0.9946,0.0,True,2038.8,removida
+sales_profit,transaction_count_lag_7,defasada,nao,defasada em h,0.8486,0.0,True,1.0,mantida
+sales_profit,order_quantity_lag_7,defasada,nao,defasada em h,0.8366,0.0,True,108.9,removida

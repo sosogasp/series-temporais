@@ -1,0 +1,11 @@
+base,exogena,disponibilidade,coeficiente,sinal,erro_padrao,p_valor,significativa
+delhi_temperatura,humidity_lag_7,defasada,-0.00020684999712114373,negativo,0.005500468693420436,0.9700019151127572,False
+delhi_temperatura,wind_speed_lag_7,defasada,0.005939348534991782,positivo,0.010966990096250932,0.588117546002993,False
+delhi_temperatura,meanpressure_lag_7,defasada,0.018033424230186317,positivo,0.0253502701744214,0.47685492233661153,False
+pilgrims_close,Low_lag_5,defasada,-0.0196529520184286,negativo,0.008705284139039138,0.023971307238592098,True
+pilgrims_close,Volume_lag_5,defasada,-5.90465773287773e-09,negativo,4.450106100973472e-09,0.18455574536364572,False
+microsoft_open,close_lag_1,conhecida,0.6146821464755454,positivo,0.013845887993812572,0.0,True
+microsoft_open,volume_lag_1,conhecida,-6.345215664959039e-10,negativo,1.6981894631578426e-09,0.7086677641952037,False
+sales_profit,transaction_count_lag_7,defasada,-26.782100836752864,negativo,6.341636812388524,2.4084100421516722e-05,True
+brasil_vitorias,matches_played_lag_1,defasada,-0.44736049144074247,negativo,0.18540331208417454,0.0158259643960288,True
+brasil_vitorias,friendly_matches_lag_1,defasada,0.22693875063083904,positivo,0.1858220003301997,0.22198397869521436,False

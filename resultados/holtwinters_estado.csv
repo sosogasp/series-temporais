@@ -1,0 +1,6 @@
+base,nivel_final,tendencia_final,amplitude_sazonal,amplitude_sobre_nivel_pct,trend,seasonal,damped
+delhi_temperatura,15.869960958228722,0.005873517051363985,,,add,,False
+pilgrims_close,21.277624166463163,0.0028949562107940933,,,add,,False
+microsoft_open,131.95470524151642,0.08648429438120496,,,add,,False
+sales_profit,-14.469976754771311,-3.5984442267015666,,,add,,False
+brasil_vitorias,8.027252192755519,0.09999188439153828,,,add,,False

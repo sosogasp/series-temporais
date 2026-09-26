@@ -1,0 +1,6 @@
+base,trend,seasonal,damped,m,alpha_nivel,beta_tendencia,gamma_sazonal,phi_amortecimento
+delhi_temperatura,add,,True,30,0.7654448204351986,0.0,,0.9873397834037572
+pilgrims_close,add,,True,1,0.9999999850988388,0.0023538630353958606,,0.9937895915010843
+microsoft_open,add,add,True,30,0.8809394970213504,0.0,0.0,0.9482882958794874
+sales_profit,add,,True,12,0.16250298257948653,0.09033829435372735,,0.8163780979021413
+brasil_vitorias,,add,False,4,0.20445214946228102,,0.0,

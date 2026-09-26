@@ -1,43 +1,245 @@
-params,mae_validacao,base,modelo
-"{'order': (1, 1, 0), 'seasonal_order': (0, 1, 1, 52)}",894.2533788457885,vendas_semanais,SARIMAX
-"{'order': (0, 1, 0), 'seasonal_order': (0, 1, 1, 52)}",894.2822464653697,vendas_semanais,SARIMAX
-"{'order': (2, 1, 0), 'seasonal_order': (0, 1, 1, 52)}",895.3497448436073,vendas_semanais,SARIMAX
-"{'order': (2, 1, 1), 'seasonal_order': (0, 1, 1, 52)}",897.0102306094992,vendas_semanais,SARIMAX
-"{'order': (0, 1, 1), 'seasonal_order': (0, 1, 1, 52)}",897.0749636801467,vendas_semanais,SARIMAX
-"{'order': (2, 1, 2), 'seasonal_order': (0, 1, 1, 52)}",897.1293848102891,vendas_semanais,SARIMAX
-"{'order': (1, 1, 2), 'seasonal_order': (0, 1, 1, 52)}",897.1572780079587,vendas_semanais,SARIMAX
-"{'order': (0, 1, 2), 'seasonal_order': (0, 1, 1, 52)}",897.2143686942785,vendas_semanais,SARIMAX
-"{'order': (1, 1, 1), 'seasonal_order': (0, 1, 1, 52)}",897.2309696325859,vendas_semanais,SARIMAX
-"{'trend': 'add', 'seasonal': 'add', 'damped': False}",27.33503148434468,vendas_semanais,Holt-Winters
-"{'trend': None, 'seasonal': 'add', 'damped': False}",28.287741024066147,vendas_semanais,Holt-Winters
-"{'trend': 'add', 'seasonal': 'add', 'damped': True}",28.603904978969908,vendas_semanais,Holt-Winters
-"{'trend': 'add', 'seasonal': 'mul', 'damped': False}",31.08055173179498,vendas_semanais,Holt-Winters
-"{'trend': None, 'seasonal': 'mul', 'damped': False}",31.321414473040274,vendas_semanais,Holt-Winters
-"{'trend': 'add', 'seasonal': 'mul', 'damped': True}",34.312729109518536,vendas_semanais,Holt-Winters
-"{'trend': 'add', 'seasonal': None, 'damped': True}",43.93506015967011,vendas_semanais,Holt-Winters
-"{'trend': None, 'seasonal': None, 'damped': False}",46.10214489014751,vendas_semanais,Holt-Winters
-"{'trend': 'add', 'seasonal': None, 'damped': False}",46.307021585698685,vendas_semanais,Holt-Winters
-"{'n_estimators': 600, 'max_depth': 12, 'max_features': 0.5, 'min_samples_leaf': 1, 'min_samples_split': 2}",42.59265634781032,vendas_semanais,Random Forest
-"{'n_estimators': 600, 'max_depth': None, 'max_features': 0.5, 'min_samples_leaf': 1, 'min_samples_split': 2}",42.83809373467602,vendas_semanais,Random Forest
-"{'n_estimators': 300, 'max_depth': 12, 'max_features': 0.5, 'min_samples_leaf': 1, 'min_samples_split': 2}",42.93525641223997,vendas_semanais,Random Forest
-"{'n_estimators': 300, 'max_depth': None, 'max_features': 0.5, 'min_samples_leaf': 1, 'min_samples_split': 2}",42.9779387736585,vendas_semanais,Random Forest
-"{'n_estimators': 600, 'max_depth': 6, 'max_features': 0.5, 'min_samples_leaf': 1, 'min_samples_split': 2}",43.11296684187064,vendas_semanais,Random Forest
-"{'n_estimators': 300, 'max_depth': 6, 'max_features': 0.5, 'min_samples_leaf': 1, 'min_samples_split': 2}",43.51167535359681,vendas_semanais,Random Forest
-"{'n_estimators': 300, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2}",46.08919378138207,vendas_semanais,Random Forest
-"{'n_estimators': 300, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2}",46.64047055347672,vendas_semanais,Random Forest
-"{'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2}",46.73763680733642,vendas_semanais,Random Forest
-"{'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2}",46.80650909985826,vendas_semanais,Random Forest
-"{'n_estimators': 300, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2}",47.0937389959596,vendas_semanais,Random Forest
-"{'n_estimators': 600, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2}",47.27758063133259,vendas_semanais,Random Forest
-{'n_components': 10},28.82104172446205,vendas_semanais,PLS
-{'n_components': 6},28.83549162271315,vendas_semanais,PLS
-{'n_components': 9},28.88627340611414,vendas_semanais,PLS
-{'n_components': 7},29.202833867487943,vendas_semanais,PLS
-{'n_components': 8},29.318759091478825,vendas_semanais,PLS
-{'n_components': 11},29.32958583801816,vendas_semanais,PLS
-{'n_components': 5},29.401107856863018,vendas_semanais,PLS
-{'n_components': 12},30.261944789528105,vendas_semanais,PLS
-{'n_components': 4},32.08005673925013,vendas_semanais,PLS
-{'n_components': 3},33.70066581408773,vendas_semanais,PLS
-{'n_components': 1},43.841715517075066,vendas_semanais,PLS
-{'n_components': 2},44.186522855091205,vendas_semanais,PLS
+params,aic,bic,mae_validacao,bic_norm,mae_norm,criterio,valor,base,modelo
+"{'order': (1, 1, 2), 'seasonal_order': (0, 0, 2, 30)}",3929.690863275681,3974.2049891955744,1.8878495664888326,0.10237666284899354,0.22412544304756388,BIC+MAE normalizados,0.3265021058965574,delhi_temperatura,SARIMAX
+"{'order': (1, 1, 1), 'seasonal_order': (0, 0, 2, 30)}",3934.373823005788,3973.949630942872,1.8900732968818041,0.06535481838009284,0.3123200452253446,BIC+MAE normalizados,0.37767486360543745,delhi_temperatura,SARIMAX
+"{'order': (1, 1, 1), 'seasonal_order': (2, 0, 0, 30)}",3936.8392481555056,3976.4227447044254,1.8839115836759708,0.4239068998778895,0.06794246841133265,BIC+MAE normalizados,0.49184936828922216,delhi_temperatura,SARIMAX
+"{'order': (1, 1, 1), 'seasonal_order': (1, 0, 2, 30)}",3928.976062011808,3973.4988459410265,1.9024116213733275,0.0,0.8016660664469959,BIC+MAE normalizados,0.8016660664469959,delhi_temperatura,SARIMAX
+"{'order': (2, 1, 2), 'seasonal_order': (1, 0, 2, 30)}",3923.771003678702,3978.1771575807934,1.8864892647971223,0.6782617129913411,0.17017498802777267,BIC+MAE normalizados,0.8484367010191137,delhi_temperatura,SARIMAX
+"{'order': (2, 1, 1), 'seasonal_order': (2, 0, 0, 30)}",3934.961918212584,3979.484702141803,1.8821984886764012,0.8678295490081789,0.0,BIC+MAE normalizados,0.8678295490081789,delhi_temperatura,SARIMAX
+"{'order': (1, 1, 2), 'seasonal_order': (1, 0, 2, 30)}",3925.4619222156393,3974.922062126632,1.8993612120497303,0.20633791041206498,0.6806848370567941,BIC+MAE normalizados,0.887022747468859,delhi_temperatura,SARIMAX
+"{'order': (2, 1, 1), 'seasonal_order': (1, 0, 2, 30)}",3930.727684100857,3980.19744402221,1.8968105960248112,0.9711628807632336,0.5795257368632593,BIC+MAE normalizados,1.550688617626493,delhi_temperatura,SARIMAX
+"{'order': (2, 1, 1), 'seasonal_order': (2, 0, 1, 30)}",3930.926588193478,3980.396348114832,1.898385906704407,1.0,0.6420035890041917,BIC+MAE normalizados,1.6420035890041917,delhi_temperatura,SARIMAX
+"{'order': (1, 1, 1), 'seasonal_order': (2, 0, 1, 30)}",3933.446669938542,3977.978103556077,1.9074123944944577,0.649402856596554,1.0,BIC+MAE normalizados,1.649402856596554,delhi_temperatura,SARIMAX
+"{'trend': 'add', 'seasonal': None, 'damped': True}",,,,,,MAE validacao,2.0103374425893104,delhi_temperatura,Holt-Winters
+"{'trend': None, 'seasonal': None, 'damped': False}",,,,,,MAE validacao,2.0122363142289297,delhi_temperatura,Holt-Winters
+"{'trend': 'add', 'seasonal': None, 'damped': False}",,,,,,MAE validacao,2.025765990466751,delhi_temperatura,Holt-Winters
+"{'trend': 'add', 'seasonal': 'mul', 'damped': True}",,,,,,MAE validacao,2.0555668179336943,delhi_temperatura,Holt-Winters
+"{'trend': None, 'seasonal': 'mul', 'damped': False}",,,,,,MAE validacao,2.056829079673306,delhi_temperatura,Holt-Winters
+"{'trend': 'add', 'seasonal': 'mul', 'damped': False}",,,,,,MAE validacao,2.059905779141176,delhi_temperatura,Holt-Winters
+"{'trend': None, 'seasonal': 'add', 'damped': False}",,,,,,MAE validacao,2.0920292810788816,delhi_temperatura,Holt-Winters
+"{'trend': 'add', 'seasonal': 'add', 'damped': True}",,,,,,MAE validacao,2.0932245093959962,delhi_temperatura,Holt-Winters
+"{'trend': 'add', 'seasonal': 'add', 'damped': False}",,,,,,MAE validacao,2.099146596030441,delhi_temperatura,Holt-Winters
+"{'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,1.6675794271026394,delhi_temperatura,Random Forest
+"{'n_estimators': 300, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,1.6725225601173628,delhi_temperatura,Random Forest
+"{'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,1.6782651114514275,delhi_temperatura,Random Forest
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,1.6809861723443045,delhi_temperatura,Random Forest
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,1.6847362772469467,delhi_temperatura,Random Forest
+"{'n_estimators': 300, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1}",,,,,,MAE validacao,1.6859429383090336,delhi_temperatura,Random Forest
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 2}",,,,,,MAE validacao,1.6861209958467807,delhi_temperatura,Random Forest
+"{'n_estimators': 300, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,1.6931999373611202,delhi_temperatura,Random Forest
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,1.6991853408858035,delhi_temperatura,Random Forest
+"{'n_estimators': 300, 'max_depth': 12, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,1.7050593914441536,delhi_temperatura,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 0.5, 'min_samples_split': 2, 'min_samples_leaf': 2}",,,,,,MAE validacao,1.7122132107723922,delhi_temperatura,Random Forest
+"{'n_estimators': 300, 'max_depth': 6, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,1.7193988393340278,delhi_temperatura,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,1.7236602987397174,delhi_temperatura,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 2}",,,,,,MAE validacao,1.7313758071545067,delhi_temperatura,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1}",,,,,,MAE validacao,1.7373189491139183,delhi_temperatura,Random Forest
+"{'n_estimators': 300, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1}",,,,,,MAE validacao,1.7413722593261696,delhi_temperatura,Random Forest
+{'n_components': 15},,,,,,MAE validacao,1.923450877638855,delhi_temperatura,PLS
+{'n_components': 14},,,,,,MAE validacao,1.9276227946846223,delhi_temperatura,PLS
+{'n_components': 13},,,,,,MAE validacao,1.9315737532915163,delhi_temperatura,PLS
+{'n_components': 12},,,,,,MAE validacao,1.940573705374827,delhi_temperatura,PLS
+{'n_components': 10},,,,,,MAE validacao,1.9604840476604581,delhi_temperatura,PLS
+{'n_components': 9},,,,,,MAE validacao,1.9624967459579763,delhi_temperatura,PLS
+{'n_components': 11},,,,,,MAE validacao,1.9651769774851497,delhi_temperatura,PLS
+{'n_components': 8},,,,,,MAE validacao,1.9704503365155537,delhi_temperatura,PLS
+{'n_components': 7},,,,,,MAE validacao,1.9903748938246826,delhi_temperatura,PLS
+{'n_components': 5},,,,,,MAE validacao,2.031311508832512,delhi_temperatura,PLS
+{'n_components': 6},,,,,,MAE validacao,2.0332814110103636,delhi_temperatura,PLS
+{'n_components': 4},,,,,,MAE validacao,2.049054216936814,delhi_temperatura,PLS
+{'n_components': 3},,,,,,MAE validacao,2.073528582012517,delhi_temperatura,PLS
+{'n_components': 2},,,,,,MAE validacao,2.142920059787873,delhi_temperatura,PLS
+{'n_components': 1},,,,,,MAE validacao,2.2398727985968785,delhi_temperatura,PLS
+"{'order': (1, 1, 0), 'seasonal_order': (0, 0, 0, 0)}",722.1625480208036,749.4753523774896,inf,0.0,,BIC+MAE normalizados,,pilgrims_close,SARIMAX
+"{'order': (0, 1, 1), 'seasonal_order': (0, 0, 0, 0)}",722.4556398138288,749.7678579610905,inf,8.056020345614241e-05,,BIC+MAE normalizados,,pilgrims_close,SARIMAX
+"{'order': (2, 1, 0), 'seasonal_order': (0, 0, 0, 0)}",724.0165580413891,758.1568307254662,inf,0.0023910027747274546,,BIC+MAE normalizados,,pilgrims_close,SARIMAX
+"{'order': (1, 1, 1), 'seasonal_order': (0, 0, 0, 0)}",724.2051886118338,758.3454612959109,inf,0.002442954320219345,,BIC+MAE normalizados,,pilgrims_close,SARIMAX
+"{'order': (0, 1, 2), 'seasonal_order': (0, 0, 0, 0)}",724.8711523158786,759.0106921307715,inf,0.002626168366057136,,BIC+MAE normalizados,,pilgrims_close,SARIMAX
+"{'order': (2, 1, 1), 'seasonal_order': (0, 0, 0, 0)}",726.270024630448,767.2383518513406,inf,0.004892183027716558,,BIC+MAE normalizados,,pilgrims_close,SARIMAX
+"{'order': (1, 1, 2), 'seasonal_order': (0, 0, 0, 0)}",726.9812494262246,767.9486972040961,inf,0.00508782225428321,,BIC+MAE normalizados,,pilgrims_close,SARIMAX
+"{'order': (2, 1, 2), 'seasonal_order': (0, 0, 0, 0)}",727.4187758793219,775.214131620172,inf,0.00708882636350691,,BIC+MAE normalizados,,pilgrims_close,SARIMAX
+"{'order': (2, 0, 1), 'seasonal_order': (0, 0, 0, 0)}",4254.265970769327,4295.2351773043565,inf,0.9765527528952723,,BIC+MAE normalizados,,pilgrims_close,SARIMAX
+"{'order': (2, 0, 0), 'seasonal_order': (0, 0, 0, 0)}",4346.228647740717,4380.369653186574,inf,1.0,,BIC+MAE normalizados,,pilgrims_close,SARIMAX
+"{'trend': 'add', 'seasonal': None, 'damped': True}",,,,,,MAE validacao,inf,pilgrims_close,Holt-Winters
+"{'trend': 'add', 'seasonal': None, 'damped': False}",,,,,,MAE validacao,inf,pilgrims_close,Holt-Winters
+"{'trend': None, 'seasonal': None, 'damped': False}",,,,,,MAE validacao,inf,pilgrims_close,Holt-Winters
+"{'n_estimators': 300, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,0.4989153921224571,pilgrims_close,Random Forest
+"{'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,0.5004265253061275,pilgrims_close,Random Forest
+"{'n_estimators': 300, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,0.5009804324760975,pilgrims_close,Random Forest
+"{'n_estimators': 300, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1}",,,,,,MAE validacao,0.5014138749141924,pilgrims_close,Random Forest
+"{'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,0.5039184275751335,pilgrims_close,Random Forest
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 2}",,,,,,MAE validacao,0.5061705934145482,pilgrims_close,Random Forest
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,0.5065565472809662,pilgrims_close,Random Forest
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,0.509658846838083,pilgrims_close,Random Forest
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,0.5221602789088561,pilgrims_close,Random Forest
+"{'n_estimators': 300, 'max_depth': 12, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,0.5233030502956745,pilgrims_close,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 0.5, 'min_samples_split': 2, 'min_samples_leaf': 2}",,,,,,MAE validacao,0.5528167703803727,pilgrims_close,Random Forest
+"{'n_estimators': 300, 'max_depth': 6, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,0.5534313610026493,pilgrims_close,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 2}",,,,,,MAE validacao,0.583314648479492,pilgrims_close,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,0.5837041460641288,pilgrims_close,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1}",,,,,,MAE validacao,0.5843672680206209,pilgrims_close,Random Forest
+"{'n_estimators': 300, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1}",,,,,,MAE validacao,0.5845908347291002,pilgrims_close,Random Forest
+{'n_components': 14},,,,,,MAE validacao,0.4970043303075972,pilgrims_close,PLS
+{'n_components': 13},,,,,,MAE validacao,0.4971467089976694,pilgrims_close,PLS
+{'n_components': 15},,,,,,MAE validacao,0.49790606477841964,pilgrims_close,PLS
+{'n_components': 12},,,,,,MAE validacao,0.5002630346330583,pilgrims_close,PLS
+{'n_components': 11},,,,,,MAE validacao,0.504521910961431,pilgrims_close,PLS
+{'n_components': 10},,,,,,MAE validacao,0.5326384442673852,pilgrims_close,PLS
+{'n_components': 9},,,,,,MAE validacao,0.5365145447125493,pilgrims_close,PLS
+{'n_components': 8},,,,,,MAE validacao,0.556009236894325,pilgrims_close,PLS
+{'n_components': 6},,,,,,MAE validacao,0.568657570441073,pilgrims_close,PLS
+{'n_components': 4},,,,,,MAE validacao,0.5702511847698186,pilgrims_close,PLS
+{'n_components': 5},,,,,,MAE validacao,0.5725517947683807,pilgrims_close,PLS
+{'n_components': 7},,,,,,MAE validacao,0.5741376862821134,pilgrims_close,PLS
+{'n_components': 2},,,,,,MAE validacao,0.5859510637627795,pilgrims_close,PLS
+{'n_components': 3},,,,,,MAE validacao,0.5863843858262459,pilgrims_close,PLS
+{'n_components': 1},,,,,,MAE validacao,1.0917460770500682,pilgrims_close,PLS
+"{'order': (0, 0, 0), 'seasonal_order': (0, 0, 2, 30)}",2145.549272881184,2170.068009169107,inf,0.0,,BIC+MAE normalizados,,microsoft_open,SARIMAX
+"{'order': (0, 0, 0), 'seasonal_order': (2, 0, 0, 30)}",2145.947761667479,2170.471515517288,inf,0.033932885829563046,,BIC+MAE normalizados,,microsoft_open,SARIMAX
+"{'order': (0, 0, 1), 'seasonal_order': (0, 0, 2, 30)}",2146.075882110218,2175.4923385331695,inf,0.45615923973044725,,BIC+MAE normalizados,,microsoft_open,SARIMAX
+"{'order': (1, 0, 0), 'seasonal_order': (2, 0, 0, 30)}",2147.1786218486723,2176.6011053941797,inf,0.54940104243285,,BIC+MAE normalizados,,microsoft_open,SARIMAX
+"{'order': (1, 0, 0), 'seasonal_order': (0, 0, 2, 30)}",2147.4882031901993,2176.910686735707,inf,0.5754353002936141,,BIC+MAE normalizados,,microsoft_open,SARIMAX
+"{'order': (0, 0, 0), 'seasonal_order': (1, 0, 2, 30)}",2147.68117499962,2177.1036585451275,inf,0.5916632739225635,,BIC+MAE normalizados,,microsoft_open,SARIMAX
+"{'order': (0, 0, 1), 'seasonal_order': (2, 0, 0, 30)}",2148.355940034895,2177.784444654666,inf,0.6489140146691696,,BIC+MAE normalizados,,microsoft_open,SARIMAX
+"{'order': (0, 0, 0), 'seasonal_order': (2, 0, 1, 30)}",2148.804983999022,2178.233488618793,inf,0.6866763885100543,,BIC+MAE normalizados,,microsoft_open,SARIMAX
+"{'order': (0, 0, 2), 'seasonal_order': (0, 0, 2, 30)}",2146.4956138886178,2180.8077743352137,inf,0.9031610701061318,,BIC+MAE normalizados,,microsoft_open,SARIMAX
+"{'order': (2, 0, 0), 'seasonal_order': (2, 0, 0, 30)}",2147.6401165783163,2181.9593157384265,inf,1.0,,BIC+MAE normalizados,,microsoft_open,SARIMAX
+"{'trend': 'add', 'seasonal': 'add', 'damped': True}",,,,,,MAE validacao,inf,microsoft_open,Holt-Winters
+"{'trend': 'add', 'seasonal': 'add', 'damped': False}",,,,,,MAE validacao,inf,microsoft_open,Holt-Winters
+"{'trend': 'add', 'seasonal': 'mul', 'damped': True}",,,,,,MAE validacao,inf,microsoft_open,Holt-Winters
+"{'trend': 'add', 'seasonal': 'mul', 'damped': False}",,,,,,MAE validacao,inf,microsoft_open,Holt-Winters
+"{'trend': 'add', 'seasonal': None, 'damped': True}",,,,,,MAE validacao,inf,microsoft_open,Holt-Winters
+"{'trend': 'add', 'seasonal': None, 'damped': False}",,,,,,MAE validacao,inf,microsoft_open,Holt-Winters
+"{'trend': None, 'seasonal': 'add', 'damped': False}",,,,,,MAE validacao,inf,microsoft_open,Holt-Winters
+"{'trend': None, 'seasonal': 'mul', 'damped': False}",,,,,,MAE validacao,inf,microsoft_open,Holt-Winters
+"{'trend': None, 'seasonal': None, 'damped': False}",,,,,,MAE validacao,inf,microsoft_open,Holt-Winters
+"{'n_estimators': 300, 'max_depth': 12, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,1.2252418157675515,microsoft_open,Random Forest
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,1.2377155173484042,microsoft_open,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 0.5, 'min_samples_split': 2, 'min_samples_leaf': 2}",,,,,,MAE validacao,1.3704055871346152,microsoft_open,Random Forest
+"{'n_estimators': 300, 'max_depth': 6, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,1.3896116748512815,microsoft_open,Random Forest
+"{'n_estimators': 300, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1}",,,,,,MAE validacao,1.6801128678364317,microsoft_open,Random Forest
+"{'n_estimators': 300, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,1.7733298137911495,microsoft_open,Random Forest
+"{'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,1.7917262159653997,microsoft_open,Random Forest
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,1.792207251955475,microsoft_open,Random Forest
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 2}",,,,,,MAE validacao,1.8582820096406982,microsoft_open,Random Forest
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,1.8801554741915814,microsoft_open,Random Forest
+"{'n_estimators': 300, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1}",,,,,,MAE validacao,1.8931103743699098,microsoft_open,Random Forest
+"{'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,1.8969367223517148,microsoft_open,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1}",,,,,,MAE validacao,1.9032269461767366,microsoft_open,Random Forest
+"{'n_estimators': 300, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,1.9262466108706098,microsoft_open,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 2}",,,,,,MAE validacao,2.024904995778264,microsoft_open,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,2.027801988711063,microsoft_open,Random Forest
+{'n_components': 15},,,,,,MAE validacao,0.7472160711779021,microsoft_open,PLS
+{'n_components': 14},,,,,,MAE validacao,0.7979988529133384,microsoft_open,PLS
+{'n_components': 13},,,,,,MAE validacao,0.8128130833788078,microsoft_open,PLS
+{'n_components': 12},,,,,,MAE validacao,0.9117117404490988,microsoft_open,PLS
+{'n_components': 11},,,,,,MAE validacao,1.0510064662638787,microsoft_open,PLS
+{'n_components': 8},,,,,,MAE validacao,1.4139897860122115,microsoft_open,PLS
+{'n_components': 10},,,,,,MAE validacao,1.4276378993850178,microsoft_open,PLS
+{'n_components': 9},,,,,,MAE validacao,1.4341805954963296,microsoft_open,PLS
+{'n_components': 7},,,,,,MAE validacao,1.612619816526517,microsoft_open,PLS
+{'n_components': 4},,,,,,MAE validacao,1.6410683394914547,microsoft_open,PLS
+{'n_components': 3},,,,,,MAE validacao,1.6494678726863408,microsoft_open,PLS
+{'n_components': 5},,,,,,MAE validacao,1.6549733321908144,microsoft_open,PLS
+{'n_components': 6},,,,,,MAE validacao,1.6579863412522993,microsoft_open,PLS
+{'n_components': 2},,,,,,MAE validacao,1.7893293145220122,microsoft_open,PLS
+{'n_components': 1},,,,,,MAE validacao,2.9129423596673236,microsoft_open,PLS
+"{'order': (0, 1, 2), 'seasonal_order': (0, 0, 2, 12)}",27723.36372223682,27754.824800084814,4100.25550123328,0.0,0.3694958775550081,BIC+MAE normalizados,0.3694958775550081,sales_profit,SARIMAX
+"{'order': (1, 1, 2), 'seasonal_order': (0, 0, 2, 12)}",27722.552895320838,27759.257486143495,4093.7404359080983,0.2115857969321813,0.2662080850920867,BIC+MAE normalizados,0.477793882024268,sales_profit,SARIMAX
+"{'order': (0, 1, 2), 'seasonal_order': (1, 0, 2, 12)}",27722.093404447896,27758.797995270554,4095.2017141010733,0.1896528783254205,0.2893747290462507,BIC+MAE normalizados,0.4790276073716712,sales_profit,SARIMAX
+"{'order': (1, 1, 2), 'seasonal_order': (1, 0, 2, 12)}",27720.923274046403,27762.871377843727,4098.094303249959,0.38408801010441634,0.3352329258222427,BIC+MAE normalizados,0.719320935926659,sales_profit,SARIMAX
+"{'order': (1, 1, 1), 'seasonal_order': (0, 0, 2, 12)}",27743.29031897754,27774.75568407116,4076.9488768757087,0.9513626537018129,0.0,BIC+MAE normalizados,0.9513626537018129,sales_profit,SARIMAX
+"{'order': (0, 1, 2), 'seasonal_order': (2, 0, 2, 12)}",27726.775011605947,27768.72311540327,4098.1860826457,0.6634095182336359,0.3366879674383234,BIC+MAE normalizados,1.0000974856719593,sales_profit,SARIMAX
+"{'order': (0, 1, 1), 'seasonal_order': (0, 0, 2, 12)}",27743.85145266165,27770.072590239666,4094.956094119075,0.7278241203324038,0.2854807472580169,BIC+MAE normalizados,1.0133048675904208,sales_profit,SARIMAX
+"{'order': (2, 1, 2), 'seasonal_order': (0, 0, 2, 12)}",27726.785050376013,27768.733154173337,4114.49716176418,0.6638886997358873,0.5952786753970457,BIC+MAE normalizados,1.2591673751329329,sales_profit,SARIMAX
+"{'order': (2, 1, 2), 'seasonal_order': (1, 0, 2, 12)}",27725.333078751406,27772.524695523396,4103.180339229864,0.8448706794054424,0.4158653373992974,BIC+MAE normalizados,1.2607360168047397,sales_profit,SARIMAX
+"{'order': (1, 1, 2), 'seasonal_order': (2, 0, 2, 12)}",27728.583011339804,27775.774628111794,4140.025695247251,1.0,1.0,BIC+MAE normalizados,2.0,sales_profit,SARIMAX
+"{'trend': 'add', 'seasonal': None, 'damped': True}",,,,,,MAE validacao,4038.199014798884,sales_profit,Holt-Winters
+"{'trend': None, 'seasonal': None, 'damped': False}",,,,,,MAE validacao,4081.1678875617717,sales_profit,Holt-Winters
+"{'trend': None, 'seasonal': 'add', 'damped': False}",,,,,,MAE validacao,4131.398677147702,sales_profit,Holt-Winters
+"{'trend': 'add', 'seasonal': None, 'damped': False}",,,,,,MAE validacao,4157.754781133076,sales_profit,Holt-Winters
+"{'trend': 'add', 'seasonal': 'add', 'damped': True}",,,,,,MAE validacao,4326.911772402215,sales_profit,Holt-Winters
+"{'trend': 'add', 'seasonal': 'add', 'damped': False}",,,,,,MAE validacao,4403.258794530927,sales_profit,Holt-Winters
+"{'trend': 'add', 'seasonal': 'mul', 'damped': False}",,,,,,MAE validacao,inf,sales_profit,Holt-Winters
+"{'trend': 'add', 'seasonal': 'mul', 'damped': True}",,,,,,MAE validacao,inf,sales_profit,Holt-Winters
+"{'trend': None, 'seasonal': 'mul', 'damped': False}",,,,,,MAE validacao,inf,sales_profit,Holt-Winters
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,4079.1004465409474,sales_profit,Random Forest
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,4125.011916606533,sales_profit,Random Forest
+"{'n_estimators': 300, 'max_depth': 6, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,4135.527082240807,sales_profit,Random Forest
+"{'n_estimators': 300, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1}",,,,,,MAE validacao,4137.862681348135,sales_profit,Random Forest
+"{'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,4142.072690267416,sales_profit,Random Forest
+"{'n_estimators': 300, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,4145.803292098532,sales_profit,Random Forest
+"{'n_estimators': 300, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1}",,,,,,MAE validacao,4147.796270958491,sales_profit,Random Forest
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 2}",,,,,,MAE validacao,4156.509292171189,sales_profit,Random Forest
+"{'n_estimators': 300, 'max_depth': 12, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,4165.907513334162,sales_profit,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1}",,,,,,MAE validacao,4166.707167912807,sales_profit,Random Forest
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,4167.466695694459,sales_profit,Random Forest
+"{'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,4168.541555008613,sales_profit,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 0.5, 'min_samples_split': 2, 'min_samples_leaf': 2}",,,,,,MAE validacao,4169.9938848205165,sales_profit,Random Forest
+"{'n_estimators': 300, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,4172.569277802742,sales_profit,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,4189.91392558926,sales_profit,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 2}",,,,,,MAE validacao,4193.947732817219,sales_profit,Random Forest
+{'n_components': 5},,,,,,MAE validacao,4861.261715024574,sales_profit,PLS
+{'n_components': 6},,,,,,MAE validacao,4890.506500975238,sales_profit,PLS
+{'n_components': 4},,,,,,MAE validacao,4893.332112242106,sales_profit,PLS
+{'n_components': 15},,,,,,MAE validacao,4905.1573219102565,sales_profit,PLS
+{'n_components': 14},,,,,,MAE validacao,4906.464146319841,sales_profit,PLS
+{'n_components': 1},,,,,,MAE validacao,4911.302520349778,sales_profit,PLS
+{'n_components': 7},,,,,,MAE validacao,4937.616845590305,sales_profit,PLS
+{'n_components': 3},,,,,,MAE validacao,4948.684195525596,sales_profit,PLS
+{'n_components': 8},,,,,,MAE validacao,4958.918910184441,sales_profit,PLS
+{'n_components': 10},,,,,,MAE validacao,4962.5688016308695,sales_profit,PLS
+{'n_components': 13},,,,,,MAE validacao,4969.799107332465,sales_profit,PLS
+{'n_components': 12},,,,,,MAE validacao,4971.06298985438,sales_profit,PLS
+{'n_components': 9},,,,,,MAE validacao,4981.179520532635,sales_profit,PLS
+{'n_components': 2},,,,,,MAE validacao,4984.24709634151,sales_profit,PLS
+{'n_components': 11},,,,,,MAE validacao,5029.184404430365,sales_profit,PLS
+"{'order': (0, 1, 2), 'seasonal_order': (0, 0, 2, 4)}",336.3162404525562,351.4284220360739,2.9730182288321143,0.0,0.21617176250493778,BIC+MAE normalizados,0.21617176250493778,brasil_vitorias,SARIMAX
+"{'order': (0, 1, 2), 'seasonal_order': (1, 0, 2, 4)}",337.0871458681006,354.35821053497796,2.8887334432589316,0.3691657756921809,0.0,BIC+MAE normalizados,0.3691657756921809,brasil_vitorias,SARIMAX
+"{'order': (1, 1, 1), 'seasonal_order': (0, 0, 2, 4)}",342.11826373585535,357.3389746251248,2.9771584187323508,0.7447546920614336,0.2267904304146064,BIC+MAE normalizados,0.9715451224760401,brasil_vitorias,SARIMAX
+"{'order': (2, 1, 1), 'seasonal_order': (2, 0, 0, 4)}",341.910576816862,359.3056749760271,2.983375249636268,0.9925672767809506,0.24273522145317547,BIC+MAE normalizados,1.235302498234126,brasil_vitorias,SARIMAX
+"{'order': (0, 1, 2), 'seasonal_order': (2, 0, 2, 4)}",338.3499241189173,357.7798718691543,3.0630256983423836,0.8003096145937517,0.4470209387865833,BIC+MAE normalizados,1.247330553380335,brasil_vitorias,SARIMAX
+"{'order': (2, 1, 0), 'seasonal_order': (2, 0, 0, 4)}",343.559424464419,358.7801353536885,3.059668840574934,0.9263470556249916,0.4384113438859958,BIC+MAE normalizados,1.3647583995109875,brasil_vitorias,SARIMAX
+"{'order': (1, 1, 2), 'seasonal_order': (0, 0, 2, 4)}",338.2245339872035,355.4955986540808,3.2300058099846267,0.5124815022058011,0.8752878530523047,BIC+MAE normalizados,1.3877693552581059,brasil_vitorias,SARIMAX
+"{'order': (0, 1, 1), 'seasonal_order': (0, 0, 2, 4)}",343.4779061822524,356.52422980162623,3.2786307388007465,0.6420933890798163,1.0,BIC+MAE normalizados,1.6420933890798164,brasil_vitorias,SARIMAX
+"{'order': (0, 1, 1), 'seasonal_order': (1, 0, 2, 4)}",344.14395196818265,359.3646628574521,3.1648927065248467,1.0,0.70828719876642,BIC+MAE normalizados,1.70828719876642,brasil_vitorias,SARIMAX
+"{'order': (1, 1, 2), 'seasonal_order': (1, 0, 2, 4)}",339.05974009549044,358.4896878457275,3.212971900466818,0.8897494378739509,0.831599656923276,BIC+MAE normalizados,1.721349094797227,brasil_vitorias,SARIMAX
+"{'trend': None, 'seasonal': 'add', 'damped': False}",,,,,,MAE validacao,2.661676738963399,brasil_vitorias,Holt-Winters
+"{'trend': 'add', 'seasonal': 'add', 'damped': True}",,,,,,MAE validacao,2.717485806447505,brasil_vitorias,Holt-Winters
+"{'trend': 'add', 'seasonal': 'add', 'damped': False}",,,,,,MAE validacao,2.7374448552340143,brasil_vitorias,Holt-Winters
+"{'trend': None, 'seasonal': None, 'damped': False}",,,,,,MAE validacao,2.8617786366407687,brasil_vitorias,Holt-Winters
+"{'trend': 'add', 'seasonal': None, 'damped': True}",,,,,,MAE validacao,3.0089652212658327,brasil_vitorias,Holt-Winters
+"{'trend': 'add', 'seasonal': None, 'damped': False}",,,,,,MAE validacao,3.0586588997367703,brasil_vitorias,Holt-Winters
+"{'trend': 'add', 'seasonal': 'mul', 'damped': False}",,,,,,MAE validacao,inf,brasil_vitorias,Holt-Winters
+"{'trend': 'add', 'seasonal': 'mul', 'damped': True}",,,,,,MAE validacao,inf,brasil_vitorias,Holt-Winters
+"{'trend': None, 'seasonal': 'mul', 'damped': False}",,,,,,MAE validacao,inf,brasil_vitorias,Holt-Winters
+"{'n_estimators': 300, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1}",,,,,,MAE validacao,2.8749685990338163,brasil_vitorias,Random Forest
+"{'n_estimators': 300, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1}",,,,,,MAE validacao,2.88769997276066,brasil_vitorias,Random Forest
+"{'n_estimators': 300, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,2.897815001021524,brasil_vitorias,Random Forest
+"{'n_estimators': 300, 'max_depth': 12, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,2.9010730618013225,brasil_vitorias,Random Forest
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,2.902910461720244,brasil_vitorias,Random Forest
+"{'n_estimators': 300, 'max_depth': 6, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,2.9042692337169327,brasil_vitorias,Random Forest
+"{'n_estimators': 300, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,2.911153839719058,brasil_vitorias,Random Forest
+"{'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,2.9163662643717,brasil_vitorias,Random Forest
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,2.9163662643717,brasil_vitorias,Random Forest
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 2}",,,,,,MAE validacao,2.920136324424368,brasil_vitorias,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",,,,,,MAE validacao,2.926583413926869,brasil_vitorias,Random Forest
+"{'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,2.931596723928245,brasil_vitorias,Random Forest
+"{'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",,,,,,MAE validacao,2.931994895757364,brasil_vitorias,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 2}",,,,,,MAE validacao,2.9364713598960823,brasil_vitorias,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1}",,,,,,MAE validacao,2.9388498665745697,brasil_vitorias,Random Forest
+"{'n_estimators': 600, 'max_depth': 6, 'max_features': 0.5, 'min_samples_split': 2, 'min_samples_leaf': 2}",,,,,,MAE validacao,2.953874952008962,brasil_vitorias,Random Forest
+{'n_components': 1},,,,,,MAE validacao,2.836651065013311,brasil_vitorias,PLS
+{'n_components': 6},,,,,,MAE validacao,3.127777368101443,brasil_vitorias,PLS
+{'n_components': 7},,,,,,MAE validacao,3.155244035785673,brasil_vitorias,PLS
+{'n_components': 5},,,,,,MAE validacao,3.2186780875048,brasil_vitorias,PLS
+{'n_components': 4},,,,,,MAE validacao,3.25873386775737,brasil_vitorias,PLS
+{'n_components': 8},,,,,,MAE validacao,3.400685184886969,brasil_vitorias,PLS
+{'n_components': 3},,,,,,MAE validacao,3.426482122484138,brasil_vitorias,PLS
+{'n_components': 2},,,,,,MAE validacao,3.479798055457358,brasil_vitorias,PLS
+{'n_components': 10},,,,,,MAE validacao,3.543323121967079,brasil_vitorias,PLS
+{'n_components': 9},,,,,,MAE validacao,3.5671060621109403,brasil_vitorias,PLS
+{'n_components': 12},,,,,,MAE validacao,3.569428752931324,brasil_vitorias,PLS
+{'n_components': 11},,,,,,MAE validacao,3.5977296977336666,brasil_vitorias,PLS
+{'n_components': 13},,,,,,MAE validacao,3.680324601064877,brasil_vitorias,PLS
+{'n_components': 14},,,,,,MAE validacao,3.7054534852026015,brasil_vitorias,PLS
+{'n_components': 15},,,,,,MAE validacao,3.729452844417049,brasil_vitorias,PLS

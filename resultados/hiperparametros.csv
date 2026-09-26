@@ -1,5 +1,21 @@
-base,modelo,params,mae_validacao,segundos
-vendas_semanais,SARIMAX,"{'order': (1, 1, 0), 'seasonal_order': (0, 1, 1, 52)}",894.2533788457885,209.0
-vendas_semanais,Holt-Winters,"{'trend': 'add', 'seasonal': 'add', 'damped': False}",27.33503148434468,5.9
-vendas_semanais,Random Forest,"{'n_estimators': 600, 'max_depth': 12, 'max_features': 0.5, 'min_samples_leaf': 1, 'min_samples_split': 2}",42.59265634781032,61.2
-vendas_semanais,PLS,{'n_components': 10},28.82104172446205,0.8
+base,modelo,params,criterio,valor,segundos
+delhi_temperatura,SARIMAX,"{'order': (1, 1, 2), 'seasonal_order': (0, 0, 2, 30)}",BIC+MAE normalizados,0.3265021058965574,3971.8
+delhi_temperatura,Holt-Winters,"{'trend': 'add', 'seasonal': None, 'damped': True}",MAE validacao,2.0103374425893104,32.0
+delhi_temperatura,Random Forest,"{'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",MAE validacao,1.6675794271026394,233.5
+delhi_temperatura,PLS,{'n_components': 15},MAE validacao,1.923450877638855,1.5
+pilgrims_close,SARIMAX,"{'order': (1, 1, 0), 'seasonal_order': (0, 0, 0, 0)}",BIC+MAE normalizados,,838.9
+pilgrims_close,Holt-Winters,"{'trend': 'add', 'seasonal': None, 'damped': True}",MAE validacao,inf,100.8
+pilgrims_close,Random Forest,"{'n_estimators': 300, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",MAE validacao,0.4989153921224571,3394.8
+pilgrims_close,PLS,{'n_components': 14},MAE validacao,0.4970043303075972,15.7
+microsoft_open,SARIMAX,"{'order': (0, 0, 0), 'seasonal_order': (0, 0, 2, 30)}",BIC+MAE normalizados,,3736.2
+microsoft_open,Holt-Winters,"{'trend': 'add', 'seasonal': 'add', 'damped': True}",MAE validacao,inf,215.6
+microsoft_open,Random Forest,"{'n_estimators': 300, 'max_depth': 12, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 1}",MAE validacao,1.2252418157675515,797.1
+microsoft_open,PLS,{'n_components': 15},MAE validacao,0.7472160711779021,7.5
+sales_profit,SARIMAX,"{'order': (0, 1, 2), 'seasonal_order': (0, 0, 2, 12)}",BIC+MAE normalizados,0.3694958775550081,438.1
+sales_profit,Holt-Winters,"{'trend': 'add', 'seasonal': None, 'damped': True}",MAE validacao,4038.199014798884,12.4
+sales_profit,Random Forest,"{'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",MAE validacao,4079.1004465409474,302.0
+sales_profit,PLS,{'n_components': 5},MAE validacao,4861.261715024574,1.4
+brasil_vitorias,SARIMAX,"{'order': (0, 1, 2), 'seasonal_order': (0, 0, 2, 4)}",BIC+MAE normalizados,0.21617176250493778,11.2
+brasil_vitorias,Holt-Winters,"{'trend': None, 'seasonal': 'add', 'damped': False}",MAE validacao,2.661676738963399,2.8
+brasil_vitorias,Random Forest,"{'n_estimators': 300, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1}",MAE validacao,2.8749685990338163,38.2
+brasil_vitorias,PLS,{'n_components': 1},MAE validacao,2.836651065013311,0.6

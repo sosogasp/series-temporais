@@ -1,0 +1,14 @@
+Base,Verificação,Ocorrências,Interpretação
+Delhi Climate,Umidade fora de 0% a 100%,0,Revisar se maior que zero
+Delhi Climate,Velocidade do vento negativa,0,Deve ser zero
+Delhi Climate,Pressão fora de 870 a 1.100 hPa,8,Possíveis erros de medição/registro
+Pilgrim's Pride,High menor que Open/Close,0,Deve ser zero
+Pilgrim's Pride,Low maior que Open/Close,0,Deve ser zero
+Pilgrim's Pride,Sessões com volume zero,10,"Investigar, mas não excluir automaticamente"
+Seleção Brasileira,Vitórias maiores que partidas,0,Deve ser zero
+Seleção Brasileira,Amistosos maiores que partidas,0,Deve ser zero
+Seleção Brasileira,Anos sem partidas registradas,12,Cobertura histórica incompleta
+Bike Sales,Dias com lucro zero,155,Compatível com dias sem vendas
+Bike Sales,Lucro positivo sem transações,0,Deve ser zero
+Microsoft Stock,Preços de abertura não positivos,0,Deve ser zero
+Microsoft Stock,Volumes anteriores negativos,0,Deve ser zero

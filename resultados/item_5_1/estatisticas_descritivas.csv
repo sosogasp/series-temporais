@@ -1,0 +1,6 @@
+Base,Média,Mediana,Desvio padrão,Coeficiente de variação,Q1,Q3,Amplitude interquartil,Assimetria,Zeros
+Delhi Climate,25.232,27.167,7.337,0.291,18.517,31.143,12.626,-0.375,0
+Pilgrim's Pride,12.282,8.39,10.269,0.836,3.445,19.357,15.913,1.118,0
+Seleção Brasileira,6.11,7.0,4.583,0.75,2.0,9.0,7.0,0.359,14
+Bike Sales,15802.403,9787.0,14075.03,0.891,5307.0,26986.5,21679.5,1.003,155
+Microsoft Stock,107.43,94.02,56.684,0.528,57.872,139.44,81.568,0.826,0

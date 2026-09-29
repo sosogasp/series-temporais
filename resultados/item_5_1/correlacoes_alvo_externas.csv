@@ -1,0 +1,16 @@
+Base,Variável externa,Correlação de Pearson com o alvo
+Delhi Climate,humidity,-0.574
+Delhi Climate,wind_speed,0.287
+Delhi Climate,meanpressure,-0.035
+Pilgrim's Pride,Open,1.0
+Pilgrim's Pride,High,1.0
+Pilgrim's Pride,Low,1.0
+Pilgrim's Pride,Volume,0.389
+Pilgrim's Pride,Dividends,0.04
+Pilgrim's Pride,Stock Splits,-0.004
+Seleção Brasileira,matches_played,0.929
+Seleção Brasileira,friendly_matches,0.744
+Bike Sales,order_quantity,0.914
+Bike Sales,transaction_count,0.936
+Microsoft Stock,close_lag_1,1.0
+Microsoft Stock,volume_lag_1,0.051

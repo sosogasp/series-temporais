@@ -8,12 +8,12 @@ Cinco series e quatro modelos por serie foram avaliados no teste final walk-forw
 
 | modelo | vitorias | posicao_media |
 | --- | --- | --- |
-| Holt-Winters | 3 | 1.800 |
-| SARIMAX | 1 | 2.400 |
-| Random Forest | 1 | 2.800 |
-| PLS | 0 | 3.000 |
+| Holt-Winters | 3 | 1.600 |
+| Random Forest | 2 | 2.600 |
+| SARIMAX | 1 | 2.800 |
+| PLS | 0 | 2.600 |
 
-Melhores modelos por base: brasil_vitorias: Holt-Winters (MAE 2.644); delhi_temperatura: Holt-Winters (MAE 1.885); microsoft_open: SARIMAX (MAE 1.503); pilgrims_close: Holt-Winters (MAE 0.616); sales_profit: Random Forest (MAE 5479.244).
+Melhores modelos por base: brasil_vitorias: Holt-Winters (MAE 2.644); delhi_temperatura: Holt-Winters (MAE 1.885); microsoft_open: Random Forest (MAE 2.321); pilgrims_close: Holt-Winters (MAE 0.616); sales_profit: Random Forest (MAE 5479.244).
 
 ## 2. Integrantes e responsabilidades
 
@@ -28,8 +28,8 @@ Nomes dos integrantes, divisão de responsabilidades e evidências individuais.
 | Giovanna Pelati | Organização geral do projeto | N/A |
 | Giovanna Pelati | Revisão e refinamento da pipeline geral do projeto | pipeline.ipynb |
 | Giovanna Pelati | Implementação do modelo na pipeline | pipeline.ipynb |
-| Giovanna Pelati | Documentação do modelo principal | N/A |
-| Giovanna Pelati | Estudo do modelo de especialização | N/A |
+| Giovanna Pelati | Documentação do modelo principal | DOCUMENTACAO_PLS.md |
+| Giovanna Pelati | Estudo do modelo de especialização | DOCUMENTACAO_PLS.md |
 | João Vargas | Organização geral do projeto | N/A |
 | João Vargas | Revisão e refinamento da pipeline geral do projeto | pipeline.ipynb |
 | João Vargas | Estudo e documentação do projeto | RELATORIO.md |
@@ -141,26 +141,26 @@ SARIMAX busca ordens nao sazonais e sazonais por AIC/BIC e compara os dez melhor
 
 | base | modelo | params | valor | segundos |
 | --- | --- | --- | --- | --- |
-| delhi_temperatura | SARIMAX | {'order': (1, 1, 2), 'seasonal_order': (0, 0, 2, 30)} | 0.327 | 5482.300 |
-| delhi_temperatura | Holt-Winters | {'trend': 'add', 'seasonal': None, 'damped': True} | 2.010 | 14.900 |
-| delhi_temperatura | Random Forest | {'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2} | 1.668 | 206.700 |
-| delhi_temperatura | PLS | {'n_components': 15} | 1.923 | 8.700 |
-| pilgrims_close | SARIMAX | {'order': (1, 1, 0), 'seasonal_order': (0, 0, 0, 0)} | 0.000 | 232.700 |
-| pilgrims_close | Holt-Winters | {'trend': None, 'seasonal': None, 'damped': False} | 0.308 | 11.800 |
-| pilgrims_close | Random Forest | {'n_estimators': 300, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2} | 0.499 | 1732.000 |
-| pilgrims_close | PLS | {'n_components': 14} | 0.497 | 26.900 |
-| microsoft_open | SARIMAX | {'order': (0, 0, 0), 'seasonal_order': (2, 0, 0, 30)} | 0.514 | 2098.400 |
-| microsoft_open | Holt-Winters | {'trend': 'add', 'seasonal': 'mul', 'damped': False} | 1.301 | 53.000 |
-| microsoft_open | Random Forest | {'n_estimators': 300, 'max_depth': 12, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 1} | 1.225 | 430.900 |
-| microsoft_open | PLS | {'n_components': 15} | 0.747 | 13.200 |
-| sales_profit | SARIMAX | {'order': (0, 1, 2), 'seasonal_order': (0, 0, 2, 12)} | 0.378 | 497.000 |
-| sales_profit | Holt-Winters | {'trend': 'add', 'seasonal': None, 'damped': True} | 4038.199 | 11.000 |
-| sales_profit | Random Forest | {'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1} | 4079.100 | 326.400 |
-| sales_profit | PLS | {'n_components': 5} | 4861.262 | 10.800 |
-| brasil_vitorias | SARIMAX | {'order': (0, 1, 2), 'seasonal_order': (0, 0, 2, 4)} | 0.216 | 18.200 |
-| brasil_vitorias | Holt-Winters | {'trend': None, 'seasonal': 'add', 'damped': False} | 2.662 | 5.800 |
-| brasil_vitorias | Random Forest | {'n_estimators': 300, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1} | 2.875 | 83.300 |
-| brasil_vitorias | PLS | {'n_components': 1} | 2.837 | 8.900 |
+| delhi_temperatura | SARIMAX | {'order': (1, 1, 2), 'seasonal_order': (0, 0, 2, 30)} | 0.327 | 3971.800 |
+| delhi_temperatura | Holt-Winters | {'trend': 'add', 'seasonal': None, 'damped': True} | 2.010 | 32.000 |
+| delhi_temperatura | Random Forest | {'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2} | 1.668 | 233.500 |
+| delhi_temperatura | PLS | {'n_components': 20} | 1.916 | 21.500 |
+| pilgrims_close | SARIMAX | {'order': (1, 1, 0), 'seasonal_order': (0, 0, 0, 0)} | - | 838.900 |
+| pilgrims_close | Holt-Winters | {'trend': 'add', 'seasonal': None, 'damped': True} | inf | 100.800 |
+| pilgrims_close | Random Forest | {'n_estimators': 300, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2} | 0.499 | 3394.800 |
+| pilgrims_close | PLS | {'n_components': 19} | 0.497 | 70.500 |
+| microsoft_open | SARIMAX | {'order': (0, 0, 0), 'seasonal_order': (0, 0, 2, 30)} | - | 3736.200 |
+| microsoft_open | Holt-Winters | {'trend': 'add', 'seasonal': 'add', 'damped': True} | inf | 215.600 |
+| microsoft_open | Random Forest | {'n_estimators': 300, 'max_depth': 12, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 1} | 1.225 | 797.100 |
+| microsoft_open | PLS | {'n_components': 13} | 1.195 | 28.800 |
+| sales_profit | SARIMAX | {'order': (0, 1, 2), 'seasonal_order': (0, 0, 2, 12)} | 0.369 | 438.100 |
+| sales_profit | Holt-Winters | {'trend': 'add', 'seasonal': None, 'damped': True} | 4038.199 | 12.400 |
+| sales_profit | Random Forest | {'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1} | 4079.100 | 302.000 |
+| sales_profit | PLS | {'n_components': 5} | 4791.286 | 20.500 |
+| brasil_vitorias | SARIMAX | {'order': (0, 1, 2), 'seasonal_order': (0, 0, 2, 4)} | 0.216 | 11.200 |
+| brasil_vitorias | Holt-Winters | {'trend': None, 'seasonal': 'add', 'damped': False} | 2.662 | 2.800 |
+| brasil_vitorias | Random Forest | {'n_estimators': 300, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1} | 2.875 | 38.200 |
+| brasil_vitorias | PLS | {'n_components': 1} | 2.837 | 8.700 |
 
 Grade completa e alternativas: resultados/busca.csv. Parametros de suavizacao: resultados/holtwinters_suavizacao.csv.
 
@@ -169,40 +169,40 @@ Grade completa e alternativas: resultados/busca.csv. Parametros de suavizacao: r
 | base | modelo | MAE | posicao |
 | --- | --- | --- | --- |
 | brasil_vitorias | Holt-Winters | 2.644 | 1 |
-| brasil_vitorias | PLS | 2.707 | 2 |
+| brasil_vitorias | PLS | 2.677 | 2 |
 | brasil_vitorias | SARIMAX | 2.859 | 3 |
 | brasil_vitorias | Random Forest | 2.905 | 4 |
 | delhi_temperatura | Holt-Winters | 1.885 | 1 |
-| delhi_temperatura | Random Forest | 2.022 | 2 |
-| delhi_temperatura | SARIMAX | 2.027 | 3 |
-| delhi_temperatura | PLS | 4.625 | 4 |
-| microsoft_open | SARIMAX | 1.503 | 1 |
-| microsoft_open | PLS | 1.681 | 2 |
-| microsoft_open | Random Forest | 2.321 | 3 |
-| microsoft_open | Holt-Winters | 2.664 | 4 |
+| delhi_temperatura | PLS | 1.981 | 2 |
+| delhi_temperatura | Random Forest | 2.022 | 3 |
+| delhi_temperatura | SARIMAX | 2.027 | 4 |
+| microsoft_open | Random Forest | 2.321 | 1 |
+| microsoft_open | PLS | 2.495 | 2 |
+| microsoft_open | Holt-Winters | 2.542 | 3 |
+| microsoft_open | SARIMAX | 2.542 | 3 |
 | pilgrims_close | Holt-Winters | 0.616 | 1 |
-| pilgrims_close | SARIMAX | 0.617 | 2 |
+| pilgrims_close | SARIMAX | 0.616 | 1 |
 | pilgrims_close | PLS | 0.829 | 3 |
-| pilgrims_close | Random Forest | 0.876 | 4 |
+| pilgrims_close | Random Forest | 0.875 | 4 |
 | sales_profit | Random Forest | 5479.244 | 1 |
 | sales_profit | Holt-Winters | 5639.242 | 2 |
 | sales_profit | SARIMAX | 5720.228 | 3 |
-| sales_profit | PLS | 5996.149 | 4 |
+| sales_profit | PLS | 5974.187 | 4 |
 
 | modelo | vitorias | posicao_media |
 | --- | --- | --- |
-| Holt-Winters | 3 | 1.800 |
-| SARIMAX | 1 | 2.400 |
-| Random Forest | 1 | 2.800 |
-| PLS | 0 | 3.000 |
+| Holt-Winters | 3 | 1.600 |
+| Random Forest | 2 | 2.600 |
+| SARIMAX | 1 | 2.800 |
+| PLS | 0 | 2.600 |
 
-delhi_temperatura: Holt-Winters venceu (MAE 1.885); PLS teve o maior erro (4.625). Horizonte h=7, periodo m=30, forca sazonal 0.271. Essas caracteristicas sugerem hipoteses, nao causalidade.
+delhi_temperatura: Holt-Winters venceu (MAE 1.885); SARIMAX teve o maior erro (2.027). Horizonte h=7, periodo m=30, forca sazonal 0.271. Essas caracteristicas sugerem hipoteses, nao causalidade.
 
-pilgrims_close: Holt-Winters venceu (MAE 0.616); Random Forest teve o maior erro (0.876). Horizonte h=5, periodo m=1, forca sazonal -0.006. Essas caracteristicas sugerem hipoteses, nao causalidade.
+pilgrims_close: Holt-Winters venceu (MAE 0.616); Random Forest teve o maior erro (0.875). Horizonte h=5, periodo m=1, forca sazonal -0.006. Essas caracteristicas sugerem hipoteses, nao causalidade.
 
-microsoft_open: SARIMAX venceu (MAE 1.503); Holt-Winters teve o maior erro (2.664). Horizonte h=1, periodo m=30, forca sazonal 0.201. Essas caracteristicas sugerem hipoteses, nao causalidade.
+microsoft_open: Random Forest venceu (MAE 2.321); SARIMAX teve o maior erro (2.542). Horizonte h=1, periodo m=30, forca sazonal 0.201. Essas caracteristicas sugerem hipoteses, nao causalidade.
 
-sales_profit: Random Forest venceu (MAE 5479.244); PLS teve o maior erro (5996.149). Horizonte h=7, periodo m=12, forca sazonal 0.156. Essas caracteristicas sugerem hipoteses, nao causalidade.
+sales_profit: Random Forest venceu (MAE 5479.244); PLS teve o maior erro (5974.187). Horizonte h=7, periodo m=12, forca sazonal 0.156. Essas caracteristicas sugerem hipoteses, nao causalidade.
 
 brasil_vitorias: Holt-Winters venceu (MAE 2.644); Random Forest teve o maior erro (2.905). Horizonte h=1, periodo m=4, forca sazonal 0.345. Essas caracteristicas sugerem hipoteses, nao causalidade.
 
@@ -213,23 +213,23 @@ Residuo = observado - previsto. Vies positivo indica subestimacao; negativo indi
 | base | modelo | n | lags | vies | desvio | lb_stat | p_valor | ruido_branco |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | brasil_vitorias | Holt-Winters | 33 | 6 | 0.133 | 3.587 | 7.479 | 0.279 | sim |
-| brasil_vitorias | PLS | 33 | 6 | 0.984 | 3.509 | 7.953 | 0.241 | sim |
+| brasil_vitorias | PLS | 33 | 6 | 1.035 | 3.504 | 7.763 | 0.256 | sim |
 | brasil_vitorias | Random Forest | 33 | 6 | 1.165 | 3.834 | 8.629 | 0.196 | sim |
 | brasil_vitorias | SARIMAX | 33 | 6 | 0.122 | 3.595 | 15.803 | 0.015 | nao |
 | delhi_temperatura | Holt-Winters | 469 | 10 | 0.002 | 2.503 | 293.906 | 0.000 | nao |
-| delhi_temperatura | PLS | 469 | 10 | -2.113 | 56.419 | 0.115 | 1.000 | sim |
+| delhi_temperatura | PLS | 469 | 10 | 0.495 | 2.469 | 519.467 | 0.000 | nao |
 | delhi_temperatura | Random Forest | 469 | 10 | 0.953 | 2.315 | 425.481 | 0.000 | nao |
-| delhi_temperatura | SARIMAX | 469 | 10 | -0.090 | 5.066 | 6.506 | 0.771 | sim |
-| microsoft_open | Holt-Winters | 453 | 10 | 0.135 | 3.670 | 17.312 | 0.068 | sim |
-| microsoft_open | PLS | 453 | 10 | -0.011 | 2.597 | 26.303 | 0.003 | nao |
+| delhi_temperatura | SARIMAX | 469 | 10 | -0.090 | 5.066 | 6.500 | 0.772 | sim |
+| microsoft_open | Holt-Winters | 453 | 10 | 0.223 | 3.529 | 16.744 | 0.080 | sim |
+| microsoft_open | PLS | 453 | 10 | 0.967 | 3.407 | 124.749 | 0.000 | nao |
 | microsoft_open | Random Forest | 453 | 10 | 0.604 | 3.370 | 109.416 | 0.000 | nao |
-| microsoft_open | SARIMAX | 453 | 10 | -0.014 | 2.398 | 58.554 | 0.000 | nao |
+| microsoft_open | SARIMAX | 453 | 10 | 0.223 | 3.529 | 16.744 | 0.080 | sim |
 | pilgrims_close | Holt-Winters | 2925 | 10 | -0.008 | 0.886 | 1832.714 | 0.000 | nao |
-| pilgrims_close | PLS | 2925 | 10 | 0.035 | 1.167 | 3700.596 | 0.000 | nao |
-| pilgrims_close | Random Forest | 2925 | 10 | 0.045 | 1.198 | 5713.946 | 0.000 | nao |
-| pilgrims_close | SARIMAX | 2925 | 10 | -0.008 | 0.887 | 1843.364 | 0.000 | nao |
+| pilgrims_close | PLS | 2925 | 10 | 0.037 | 1.170 | 3743.259 | 0.000 | nao |
+| pilgrims_close | Random Forest | 2925 | 10 | 0.045 | 1.198 | 5714.099 | 0.000 | nao |
+| pilgrims_close | SARIMAX | 2925 | 10 | -0.008 | 0.886 | 1832.714 | 0.000 | nao |
 | sales_profit | Holt-Winters | 609 | 10 | 159.468 | 8473.091 | 116.197 | 0.000 | nao |
-| sales_profit | PLS | 609 | 10 | 502.414 | 8781.649 | 340.298 | 0.000 | nao |
+| sales_profit | PLS | 609 | 10 | 551.602 | 8742.842 | 305.445 | 0.000 | nao |
 | sales_profit | Random Forest | 609 | 10 | 1689.252 | 7962.880 | 128.526 | 0.000 | nao |
 | sales_profit | SARIMAX | 609 | 10 | 187.582 | 8527.976 | 143.649 | 0.000 | nao |
 
@@ -245,11 +245,11 @@ Vies 0.002; desvio 2.503; Ljung-Box p=3.016e-57. Ha autocorrelacao remanescente.
 
 Vies -0.008; desvio 0.886; Ljung-Box p=0. Ha autocorrelacao remanescente.
 
-### microsoft_open - SARIMAX (melhor MAE)
+### microsoft_open - Random Forest (melhor MAE)
 
-![residuos_microsoft_open_sarimax](../resultados/figuras/residuos_microsoft_open_sarimax.png)
+![residuos_microsoft_open_random_forest](../resultados/figuras/residuos_microsoft_open_random_forest.png)
 
-Vies -0.014; desvio 2.398; Ljung-Box p=6.799e-09. Ha autocorrelacao remanescente.
+Vies 0.604; desvio 3.370; Ljung-Box p=6.998e-19. Ha autocorrelacao remanescente.
 
 ### sales_profit - Random Forest (melhor MAE)
 
@@ -269,52 +269,62 @@ Random Forest: importancia nativa e permutation na validacao. PLS: coeficientes 
 
 | base | modelo | feature | permutation | tipo | disponibilidade |
 | --- | --- | --- | --- | --- | --- |
-| sales_profit | PLS | transaction_count_lag_7 | 3144.552 | externa | defasada |
+| sales_profit | PLS | transaction_count_lag_7 | 3875.626 | externa | defasada |
+| sales_profit | PLS | media_12 | 2024.837 | interna | - |
+| sales_profit | PLS | media_8 | 1617.757 | interna | - |
 | sales_profit | Random Forest | media_12 | 1597.012 | interna | - |
 | sales_profit | Random Forest | media_8 | 1340.551 | interna | - |
-| sales_profit | PLS | media_8 | 1113.225 | interna | - |
-| sales_profit | PLS | media_12 | 1039.325 | interna | - |
 | sales_profit | Random Forest | transaction_count_lag_7 | 988.156 | externa | defasada |
-| microsoft_open | PLS | close_lag_1 | 8.375 | externa | conhecida |
-| pilgrims_close | PLS | lag_5 | 3.812 | interna | - |
-| microsoft_open | PLS | lag_1 | 2.175 | interna | - |
-| pilgrims_close | PLS | Low_lag_5 | 2.008 | externa | defasada |
-| delhi_temperatura | PLS | semana_cos | 1.055 | interna | - |
+| pilgrims_close | PLS | lag_5 | 5.878 | interna | - |
+| microsoft_open | PLS | lag_1 | 1.630 | interna | - |
+| delhi_temperatura | PLS | semana_cos | 1.201 | interna | - |
+| delhi_temperatura | PLS | media_12 | 0.999 | interna | - |
+| pilgrims_close | PLS | Low_lag_5 | 0.898 | externa | defasada |
 | pilgrims_close | Random Forest | lag_5 | 0.762 | interna | - |
-| pilgrims_close | Random Forest | Low_lag_5 | 0.684 | externa | defasada |
-| pilgrims_close | Random Forest | media_4 | 0.598 | interna | - |
-| delhi_temperatura | PLS | mes_cos | 0.572 | interna | - |
-| pilgrims_close | PLS | lag_8 | 0.565 | interna | - |
-| delhi_temperatura | PLS | lag_7 | 0.557 | interna | - |
-| microsoft_open | PLS | lag_4 | 0.392 | interna | - |
+| pilgrims_close | Random Forest | Low_lag_5 | 0.687 | externa | defasada |
+| pilgrims_close | PLS | media_8 | 0.641 | interna | - |
+| pilgrims_close | Random Forest | media_4 | 0.597 | interna | - |
+| delhi_temperatura | PLS | mes_cos | 0.517 | interna | - |
 | delhi_temperatura | Random Forest | semana_cos | 0.206 | interna | - |
 | microsoft_open | Random Forest | close_lag_1 | 0.196 | externa | conhecida |
+| microsoft_open | PLS | close_lag_1 | 0.190 | externa | conhecida |
+| microsoft_open | PLS | lag_2 | 0.163 | interna | - |
 | delhi_temperatura | Random Forest | media_4 | 0.159 | interna | - |
 | brasil_vitorias | Random Forest | desvio_8 | 0.062 | interna | - |
 | brasil_vitorias | Random Forest | desvio_4 | 0.059 | interna | - |
 | delhi_temperatura | Random Forest | media_8 | 0.050 | interna | - |
 | brasil_vitorias | Random Forest | matches_played_lag_1 | 0.042 | externa | defasada |
-| brasil_vitorias | PLS | desvio_8 | 0.035 | interna | - |
+| brasil_vitorias | PLS | desvio_8 | 0.041 | interna | - |
 | microsoft_open | Random Forest | lag_1 | 0.027 | interna | - |
-| brasil_vitorias | PLS | lag_4 | 0.020 | interna | - |
-| brasil_vitorias | PLS | friendly_matches_lag_1 | 0.007 | externa | defasada |
+| brasil_vitorias | PLS | lag_4 | 0.022 | interna | - |
+| brasil_vitorias | PLS | desvio_12 | 0.020 | interna | - |
 | microsoft_open | Random Forest | lag_2 | 0.005 | interna | - |
 
 SARIMAX: sinal e significancia das exogenas em resultados/coeficientes_sarimax.csv. Holt-Winters e univariado; nivel, tendencia e sazonalidade constam em resultados/holtwinters_estado.csv.
 
 ## 11. Estudo do PLS
 
-PLS Regression constrói componentes latentes que maximizam a covariancia entre combinacoes das entradas e o alvo. Diferentemente do PCA, a direcao do alvo orienta a projecao. As features sao padronizadas para que unidades distintas nao dominem os componentes.
+PLS Regression constrói componentes latentes que maximizam a covariancia entre combinacoes das entradas e o alvo. Diferentemente do PCA, a direcao do alvo orienta a projecao. As features sao padronizadas para que unidades distintas nao dominem os componentes. A explicacao completa (hipoteses, hiperparametros, otimizacao, VIP e desempenho por base) esta em DOCUMENTACAO_PLS.md.
 
-Poucos componentes podem subajustar; muitos reduzem a regularizacao implicita e podem trazer instabilidade. A busca percorre de 1 ate o limite de 15 componentes, respeitando a dimensao das features, e usa MAE walk-forward de validacao. PLS pode ser util com entradas correlacionadas, mas sua projecao linear pode perder para arvores em efeitos nao lineares.
+Preparacao propria do PLS: media_4 e delta_nivel sao combinacoes lineares exatas de outras features e sao removidas no treino inicial, porque componentes alem do posto de X tornam o ajuste instavel. As externas sao winsorizadas nos quantis 0,5% e 99,5% de cada janela de treino, por causa de medicoes de pressao impossiveis em Delhi; lags e janelas do alvo nao sao limitados.
+
+Poucos componentes podem subajustar; muitos aproximam o PLS da regressao linear comum. A busca e uma grade exaustiva de 1 ate o posto de X, com MAE walk-forward de validacao. PLS e util com entradas correlacionadas, mas sua projecao linear pode perder para arvores em efeitos nao lineares.
+
+| base | n_components | n_features_pls | features_redundantes | mae_sobre_ingenuo |
+| --- | --- | --- | --- | --- |
+| delhi_temperatura | 20 | 23 | media_4, delta_nivel | 1.019 |
+| pilgrims_close | 19 | 20 | media_4, delta_nivel | 1.346 |
+| microsoft_open | 13 | 22 | media_4, delta_nivel | 0.982 |
+| sales_profit | 5 | 21 | media_4, delta_nivel | 0.816 |
+| brasil_vitorias | 1 | 17 | media_4, delta_nivel, semana_cos | 0.701 |
 
 | base | MAE | posicao | params |
 | --- | --- | --- | --- |
-| brasil_vitorias | 2.707 | 2 | {'n_components': 1} |
-| delhi_temperatura | 4.625 | 4 | {'n_components': 15} |
-| microsoft_open | 1.681 | 2 | {'n_components': 15} |
-| pilgrims_close | 0.829 | 3 | {'n_components': 14} |
-| sales_profit | 5996.149 | 4 | {'n_components': 5} |
+| brasil_vitorias | 2.677 | 2 | {'n_components': 1} |
+| delhi_temperatura | 1.981 | 2 | {'n_components': 20} |
+| microsoft_open | 2.495 | 2 | {'n_components': 13} |
+| pilgrims_close | 0.829 | 3 | {'n_components': 19} |
+| sales_profit | 5974.187 | 4 | {'n_components': 5} |
 
 VIP acima de 1 e uma regra exploratoria, nao teste de significancia. Interpretar VIP, coeficientes e permutation em conjunto.
 
@@ -336,7 +346,7 @@ Arquivos tecnicos: resultados/previsoes.csv, hiperparametros.csv, busca.csv, mae
 
 ![residuos_delhi_temperatura_sarimax](../resultados/figuras/residuos_delhi_temperatura_sarimax.png)
 
-Vies -0.090; desvio 5.066; Ljung-Box p=0.7711; sem evidencia suficiente de autocorrelacao.
+Vies -0.090; desvio 5.066; Ljung-Box p=0.7717; sem evidencia suficiente de autocorrelacao.
 
 ### delhi_temperatura - Random Forest
 
@@ -348,43 +358,43 @@ Vies 0.953; desvio 2.315; Ljung-Box p=3.526e-85; autocorrelacao remanescente.
 
 ![residuos_delhi_temperatura_pls](../resultados/figuras/residuos_delhi_temperatura_pls.png)
 
-Vies -2.113; desvio 56.419; Ljung-Box p=1; sem evidencia suficiente de autocorrelacao.
+Vies 0.495; desvio 2.469; Ljung-Box p=3.046e-105; autocorrelacao remanescente.
 
 ### pilgrims_close - SARIMAX
 
 ![residuos_pilgrims_close_sarimax](../resultados/figuras/residuos_pilgrims_close_sarimax.png)
 
-Vies -0.008; desvio 0.887; Ljung-Box p=0; autocorrelacao remanescente.
+Vies -0.008; desvio 0.886; Ljung-Box p=0; autocorrelacao remanescente.
 
 ### pilgrims_close - Random Forest
 
 ![residuos_pilgrims_close_random_forest](../resultados/figuras/residuos_pilgrims_close_random_forest.png)
 
-Vies 0.045; desvio 1.199; Ljung-Box p=0; autocorrelacao remanescente.
+Vies 0.045; desvio 1.198; Ljung-Box p=0; autocorrelacao remanescente.
 
 ### pilgrims_close - PLS
 
 ![residuos_pilgrims_close_pls](../resultados/figuras/residuos_pilgrims_close_pls.png)
 
-Vies 0.035; desvio 1.167; Ljung-Box p=0; autocorrelacao remanescente.
+Vies 0.037; desvio 1.170; Ljung-Box p=0; autocorrelacao remanescente.
+
+### microsoft_open - SARIMAX
+
+![residuos_microsoft_open_sarimax](../resultados/figuras/residuos_microsoft_open_sarimax.png)
+
+Vies 0.223; desvio 3.529; Ljung-Box p=0.08022; sem evidencia suficiente de autocorrelacao.
 
 ### microsoft_open - Holt-Winters
 
 ![residuos_microsoft_open_holt-winters](../resultados/figuras/residuos_microsoft_open_holt-winters.png)
 
-Vies 0.135; desvio 3.670; Ljung-Box p=0.06774; sem evidencia suficiente de autocorrelacao.
-
-### microsoft_open - Random Forest
-
-![residuos_microsoft_open_random_forest](../resultados/figuras/residuos_microsoft_open_random_forest.png)
-
-Vies 0.604; desvio 3.370; Ljung-Box p=6.998e-19; autocorrelacao remanescente.
+Vies 0.223; desvio 3.529; Ljung-Box p=0.08022; sem evidencia suficiente de autocorrelacao.
 
 ### microsoft_open - PLS
 
 ![residuos_microsoft_open_pls](../resultados/figuras/residuos_microsoft_open_pls.png)
 
-Vies -0.012; desvio 2.597; Ljung-Box p=0.003353; autocorrelacao remanescente.
+Vies 0.967; desvio 3.407; Ljung-Box p=5.485e-22; autocorrelacao remanescente.
 
 ### sales_profit - SARIMAX
 
@@ -402,7 +412,7 @@ Vies 159.468; desvio 8473.091; Ljung-Box p=2.986e-20; autocorrelacao remanescent
 
 ![residuos_sales_profit_pls](../resultados/figuras/residuos_sales_profit_pls.png)
 
-Vies 502.414; desvio 8781.649; Ljung-Box p=4.555e-67; autocorrelacao remanescente.
+Vies 551.602; desvio 8742.841; Ljung-Box p=1.097e-59; autocorrelacao remanescente.
 
 ### brasil_vitorias - SARIMAX
 
@@ -420,7 +430,7 @@ Vies 1.165; desvio 3.834; Ljung-Box p=0.1955; sem evidencia suficiente de autoco
 
 ![residuos_brasil_vitorias_pls](../resultados/figuras/residuos_brasil_vitorias_pls.png)
 
-Vies 0.984; desvio 3.509; Ljung-Box p=0.2415; sem evidencia suficiente de autocorrelacao.
+Vies 1.035; desvio 3.504; Ljung-Box p=0.2559; sem evidencia suficiente de autocorrelacao.
 
 ### Registro diario de demandas
 

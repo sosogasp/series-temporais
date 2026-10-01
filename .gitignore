@@ -1,0 +1,5 @@
+# backups e temporarios
+*.pre_*_backup.ipynb
+*-merge.ipynb
+.ipynb_checkpoints/
+__pycache__/

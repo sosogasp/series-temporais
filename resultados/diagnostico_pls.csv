@@ -1,6 +1,6 @@
 base,n_components,n_features_tabela,n_features_pls,features_redundantes,features_winsorizadas,iteracoes_max,convergiu,quantil_clip_inferior,quantil_clip_superior,n_amostras_ajuste,corte_ajuste,mae_teste,mae_ingenuo,mae_sobre_ingenuo,mae_validacao,segundos
-delhi_temperatura,20,25,23,"media_4, delta_nivel","humidity_lag_7, wind_speed_lag_7, meanpressure_lag_7",1,True,0.005,0.995,1066,2016-01-08,1.9812694875036512,1.944135603642436,1.0191004597578703,1.9161476277616636,21.5
-pilgrims_close,19,22,20,"media_4, delta_nivel","Low_lag_5, Volume_lag_5",1,True,0.005,0.995,6810,2015-01-28,0.8292400830906541,0.6161023037250227,1.3459454348360276,0.4970976752045868,70.5
-microsoft_open,13,24,22,"media_4, delta_nivel","close_lag_1, volume_lag_1",1,True,0.005,0.995,1026,2019-06-13,2.494967673121409,2.5417439293598236,0.9815967864826589,1.1953955086744452,28.8
-sales_profit,5,23,21,"media_4, delta_nivel",transaction_count_lag_7,1,True,0.005,0.995,1408,2014-11-27,5974.186727838727,7325.653530377668,0.8155158721423633,4791.285730283431,20.5
-brasil_vitorias,1,20,17,"media_4, delta_nivel, semana_cos","matches_played_lag_1, friendly_matches_lag_1",1,True,0.005,0.995,64,1989-01-01,2.6773833071902136,3.8181818181818183,0.7012194375974369,2.837443104423214,8.7
+delhi_temperatura,20,25,23,"media_4, delta_nivel","humidity_lag_7, wind_speed_lag_7, meanpressure_lag_7",1,True,0.005,0.995,1066,2016-01-08,1.9812694875036498,1.9441356036424358,1.0191004597578697,1.916147627761664,3.2
+pilgrims_close,19,22,20,"media_4, delta_nivel","Low_lag_5, Volume_lag_5",1,True,0.005,0.995,6810,2015-01-28,0.8292400830585303,0.6161023037250227,1.3459454347838873,0.49709767528016113,13.7
+microsoft_open,13,24,22,"media_4, delta_nivel","close_lag_1, volume_lag_1",1,True,0.005,0.995,1026,2019-06-13,2.4949676731214083,2.5417439293598236,0.9815967864826586,1.1953955086744315,4.0
+sales_profit,5,23,21,"media_4, delta_nivel",transaction_count_lag_7,1,True,0.005,0.995,1408,2014-11-27,5974.186727838727,7325.653530377668,0.8155158721423633,4791.285730283433,2.8
+brasil_vitorias,1,20,17,"media_4, delta_nivel, semana_cos","matches_played_lag_1, friendly_matches_lag_1",1,True,0.005,0.995,64,1989-01-01,2.677383307190214,3.8181818181818183,0.701219437597437,2.8374431044232136,1.0

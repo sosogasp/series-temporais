@@ -1,0 +1,11 @@
+Base,Situação,Decisão,Justificativa
+Delhi Climate,Sobreposição em 01/01/2017,Manter o valor do teste,Regra explícita de precedência
+Delhi Climate,Lacunas diárias,Preenchimento para frente,Usa somente informação passada
+Pilgrim's Pride,Dias sem pregão,Não preencher,Não representam negociações ausentes
+Seleção Brasileira,Registro de 05/09/2021 sem resultado,Excluir,Não possui desfecho utilizável
+Seleção Brasileira,Anos sem partidas,Preencher com zero,Mantém a frequência anual
+Bike Sales,Várias transações na mesma data,Agregar por dia,As linhas representam transações
+Bike Sales,Dias sem registros,Preencher com zero,"Mantém a frequência diária; ago-dez/2014 não tem nenhum registro na fonte (lacuna de dados, documentada como limitação)"
+Bike Sales,1.000 linhas idênticas na fonte,Manter e somar,"Sem identificador de transação, não há como provar duplicação; documentado como limitação"
+Microsoft Stock,Primeira linha sem valores anteriores,Excluir,Não é possível calcular os lags
+Microsoft Stock,Dias sem pregão,Não preencher,Não criar preços artificiais

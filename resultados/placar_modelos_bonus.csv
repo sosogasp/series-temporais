@@ -1,12 +1,12 @@
 modelo,vitorias,posicao_media,melhor_posicao,pior_posicao,bases
-SARIMAX,2,2.0,1,3,5
-Holt-Winters,2,2.8,1,8,5
-Random Forest,1,3.8,1,7,5
-Kalman | Fourier+ACF m=176,0,3.0,3,3,1
+Holt-Winters,3,2.6,1,8,5
+SARIMAX,1,2.8,1,5,5
+Random Forest,1,3.8,1,6,5
+Kalman | Fourier+ACF m=176,0,2.0,2,2,1
 PLS,0,3.8,2,7,5
 PLS | Fourier+ACF m=2275,0,4.0,4,4,1
-Random Forest | Fourier+ACF m=176,0,4.0,4,4,1
-PLS | Fourier+ACF m=176,0,5.0,5,5,1
+Kalman,0,4.6,2,8,5
+Random Forest | Fourier+ACF m=176,0,5.0,5,5,1
 Random Forest | Fourier+ACF m=2275,0,5.0,5,5,1
-Kalman,0,5.2,4,6,5
-Kalman | Fourier+ACF m=2275,0,8.0,8,8,1
+PLS | Fourier+ACF m=176,0,6.0,6,6,1
+Kalman | Fourier+ACF m=2275,0,7.0,7,7,1

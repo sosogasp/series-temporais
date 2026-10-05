@@ -1,6 +1,6 @@
 base,nivel_final,tendencia_final,amplitude_sazonal,amplitude_sobre_nivel_pct,trend,seasonal,damped
-delhi_temperatura,15.873753075245576,2.2601890698038583e-07,,,add,,True
-pilgrims_close,21.277624166420875,,,,,,False
-microsoft_open,125.9671984882048,0.08240306844628897,0.02038558099775445,0.0,add,mul,False
-sales_profit,2.437898994796218e-08,,,,,,False
-brasil_vitorias,7.710429602807074,,2.71842569217233,35.3,,add,False
+delhi_temperatura,15.873752098199184,2.2540646388831708e-07,,,add,,True
+pilgrims_close,21.277624166420026,,,,,,False
+microsoft_open,144.8225995836815,0.0943958201851413,0.01775344231975773,0.0,add,mul,False
+sales_profit,3.13160237386917e-08,,,,,,False
+brasil_vitorias,7.710395775283136,,2.7182711515407645,35.3,,add,False

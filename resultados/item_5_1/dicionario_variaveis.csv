@@ -1,0 +1,21 @@
+Base,Variável,Papel,Descrição,Unidade,Disponibilidade
+Delhi Climate,meantemp,Alvo,Temperatura média diária,°C,Não disponível
+Delhi Climate,humidity,Externa,Umidade média diária,% (inferida pela faixa; a fonte não informa),Somente defasada
+Delhi Climate,wind_speed,Externa,Velocidade média do vento,km/h (inferida pela faixa; a fonte não informa),Somente defasada
+Delhi Climate,meanpressure,Externa,Pressão atmosférica média,hPa (inferida pela faixa; a fonte não informa),Somente defasada
+Pilgrim's Pride,Open,Externa,Preço de abertura,USD,Somente após a abertura
+Pilgrim's Pride,High,Externa,Maior preço da sessão,USD,Somente defasada
+Pilgrim's Pride,Low,Externa,Menor preço da sessão,USD,Somente defasada
+Pilgrim's Pride,Close,Alvo,Preço de fechamento,USD,Não disponível
+Pilgrim's Pride,Volume,Externa,Volume negociado,Quantidade,Somente defasada
+Pilgrim's Pride,Dividends,Externa,Dividendo registrado,USD,Depende do anúncio
+Pilgrim's Pride,Stock Splits,Externa,Fator de desdobramento,Razão,Depende do anúncio
+Seleção Brasileira,victories,Alvo,Vitórias no ano,Contagem,Não disponível
+Seleção Brasileira,matches_played,Externa,Partidas disputadas no ano,Contagem,Somente defasada
+Seleção Brasileira,friendly_matches,Externa,Amistosos disputados no ano,Contagem,Somente defasada
+Bike Sales,Profit,Alvo,Lucro total diário,Moeda não informada,Não disponível
+Bike Sales,order_quantity,Externa,Itens vendidos no dia,Unidades,Somente defasada
+Bike Sales,transaction_count,Externa,Transações no dia,Contagem,Somente defasada
+Microsoft Stock,target_open,Alvo,Preço de abertura da sessão,USD,Não disponível
+Microsoft Stock,close_lag_1,Externa defasada,Fechamento da sessão anterior,USD,Disponível
+Microsoft Stock,volume_lag_1,Externa defasada,Volume da sessão anterior,Quantidade,Disponível

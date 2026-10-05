@@ -3,3 +3,8 @@
 *-merge.ipynb
 .ipynb_checkpoints/
 __pycache__/
+
+# temporarios do gerador do relatorio (so existem se a celula for interrompida)
+.relatorio-*/
+relatorio/.figuras.*/
+relatorio/.*.novo

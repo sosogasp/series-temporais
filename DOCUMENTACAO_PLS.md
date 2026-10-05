@@ -308,13 +308,13 @@ Os MAEs de bases diferentes não devem ser comparados entre si, pois os alvos t�
 
 | Base | Features PLS | Componentes | MAE validação | MAE teste | Posição na base (de 4) | Tempo (s) |
 |---|---:|---:|---:|---:|---:|---:|
-| Delhi | 23 | 20 | 1,916 | 1,981 | 2º | 21,5 |
-| Pilgrim's Pride | 20 | 19 | 0,497 | 0,829 | 3º | 70,5 |
-| Microsoft | 22 | 13 | 1,195 | 2,495 | 2º | 28,8 |
-| Sales | 21 | 5 | 4.791,286 | 5.974,187 | 4º | 20,5 |
-| Brasil | 17 | 1 | 2,837 | 2,677 | 2º | 8,7 |
+| Delhi | 23 | 20 | 1,916 | 1,981 | 2º | 3,2 |
+| Pilgrim's Pride | 20 | 19 | 0,497 | 0,829 | 3º | 13,7 |
+| Microsoft | 22 | 13 | 1,195 | 2,495 | 3º | 4,0 |
+| Sales | 21 | 5 | 4.791,286 | 5.974,187 | 4º | 2,8 |
+| Brasil | 17 | 1 | 2,837 | 2,677 | 2º | 1,0 |
 
-Os tempos são da execução registrada e podem variar conforme máquina e carga do sistema.
+Os tempos são os registrados em [`hiperparametros.csv`](resultados/hiperparametros.csv) (otimização + walk-forward de teste) e variam conforme máquina e carga do sistema.
 
 Com a grade limitada ao posto, as escolhas variam bastante entre as bases:
 
@@ -323,7 +323,7 @@ Com a grade limitada ao posto, as escolhas variam bastante entre as bases:
 - **Delhi** (20 de 23) e **Pilgrim's** (19 de 20): a curva de validação fica praticamente plana a partir de cerca de 13 componentes, com diferenças na terceira casa decimal. O número exato escolhido pouco importa, e a redução dimensional tem pouco efeito sobre o erro nessas bases.
 - **Brasil:** 1 de 17. Na série anual curta, uma única direção latente foi a melhor.
 
-Na comparação com os outros modelos, o nosso PLS não venceu em nenhuma base, mas ficou em 2º em três delas, com posição média de 2,6, empatado com o Random Forest ([`placar_modelos.csv`](resultados/placar_modelos.csv)). Em Pilgrim's e Microsoft, os MAEs de SARIMAX e Holt-Winters coincidem com o da previsão ingênua. Nessas bases, as posições deles refletem o fallback do walk-forward para origens com falha, e não o próprio modelo.
+Na comparação com os outros modelos, o nosso PLS não venceu nenhuma base. Ficou em 2º em Delhi e no Brasil, 3º em Pilgrim's e Microsoft e 4º em Sales, com posição média de 2,8, a mesma do Random Forest ([`placar_modelos.csv`](resultados/placar_modelos.csv)). O placar completo é Holt-Winters com 3 vitórias e posição média 1,8, SARIMAX com 1 e 2,6, Random Forest com 1 e 2,8 e PLS com 0 e 2,8. Nenhuma previsão oficial caiu no fallback do walk-forward.
 
 O MAE de teste fica acima do de validação em Pilgrim's, Microsoft e Sales. Nas duas séries de preço, o teste cobre níveis mais altos e mais voláteis do que a validação.
 
@@ -438,7 +438,7 @@ Tabela completa: [`resultados/importancia_features.csv`](resultados/importancia_
 
 ## 11. Resíduos e Ljung-Box
 
-Aplicamos o teste separadamente a cada passo de previsão (`1` a `h`). Juntar os passos em uma única sequência misturaria horizontes com viés e variância diferentes, e isso poderia parecer autocorrelação.
+Aplicamos o teste separadamente a cada passo de previsão (`1` a `h`). Os `h` erros de uma mesma origem são previsões feitas com a mesma informação e, por isso, correlacionados entre si por construção; juntar os passos numa única sequência faria o teste rejeitar ruído branco mesmo quando nenhum horizonte isolado tem padrão.
 
 | Base | `h` | Passos rejeitados a 5% | Faixa de p-valor | Leitura |
 |---|---:|---:|---|---|
@@ -456,7 +456,7 @@ Em Pilgrim's, a versão anterior rejeitava ruído branco nos 5 passos. A rejeiç
 
 Em Sales, o viés por passo varia de −106 a 1.172, pequeno perto do desvio dos resíduos (cerca de 7.300 a 10.400). A dispersão pesa mais do que o viés.
 
-O Ljung-Box agregado da seção 4.4 do notebook (`ljung_box.csv`) junta todos os passos. Para `h > 1`, ele pode apontar autocorrelação que é só efeito de misturar horizontes. Para o PLS, a leitura que adotamos é esta, por passo.
+O Ljung-Box agregado da seção 4.4 do notebook (`ljung_box.csv`) junta todos os passos; a mesma seção grava o teste por passo para os quatro modelos (`ljung_box_por_passo.csv`). Para `h > 1`, a leitura que adotamos é a por passo.
 
 Tabela completa: [`resultados/ljung_box_pls.csv`](resultados/ljung_box_pls.csv).
 
@@ -468,27 +468,20 @@ Tabela completa: [`resultados/ljung_box_pls.csv`](resultados/ljung_box_pls.csv).
 4. A validação favoreceu forte redução dimensional em Sales (5 componentes) e no Brasil (1). Em Delhi e Pilgrim's, a curva é plana a partir de cerca de 13 componentes.
 5. Em Delhi, Pilgrim's Pride, Microsoft e Sales, ao menos uma externa ficou com VIP acima de 1; no Brasil, as duas ficaram abaixo. Pela permutation, só `transaction_count_lag_7` (Sales) tem contribuição própria clara. `close_lag_1` e `Low_lag_5` são, em grande parte, redundantes com os lags do alvo.
 6. Há autocorrelação residual clara só em Microsoft. Delhi tem uma rejeição isolada, e Pilgrim's, Sales e Brasil não mostram evidência de autocorrelação.
-7. Na comparação com os outros modelos, o nosso PLS não venceu nenhuma base, ficou em 2º em Delhi, Microsoft e Brasil e teve posição média de 2,6. Frente à previsão ingênua, ganha onde o alvo é ruidoso (Sales e Brasil), empata em Delhi e Microsoft, onde o último valor já é um bom previsor, e perde em Pilgrim's (seção 9.1).
+7. Na comparação com os outros modelos, o nosso PLS não venceu nenhuma base, ficou em 2º em Delhi e no Brasil e teve posição média de 2,8, empatado com o Random Forest. Frente à previsão ingênua, ganha onde o alvo é ruidoso (Sales e Brasil), empata em Delhi e Microsoft, onde o último valor já é um bom previsor, e perde em Pilgrim's (seção 9.1).
 
 ## 13. Reproduzir somente a parte do PLS
 
-O notebook guarda cada combinação base × modelo em `resultados/checkpoints/` e reaproveita o que já existe. Para refazer só o PLS, basta apagar os checkpoints dele e executar o notebook inteiro. SARIMAX, Holt-Winters e Random Forest são carregados dos checkpoints, e o relatório é regenerado no final.
+O notebook guarda cada configuração base × modelo × cenário em `resultados/checkpoints_final/` e reaproveita o que já existe. Para refazer só o PLS, basta apagar os checkpoints dele e executar o notebook inteiro. Os demais modelos são carregados dos checkpoints, e o relatório é regenerado no final.
 
 No PowerShell, a partir da raiz do repositório:
 
 ```powershell
-Remove-Item resultados\checkpoints\*__PLS.pkl
-python -m nbconvert --to notebook --execute --inplace "pipeline.ipynb" --ExecutePreprocessor.timeout=-1
+Remove-Item resultados\checkpoints_final\*__PLS__*.pkl
+python -c "import nbformat; from nbclient import NotebookClient; nb = nbformat.read('pipeline.ipynb', 4); NotebookClient(nb, timeout=None, kernel_name='python3').execute(); nbformat.write(nb, 'pipeline.ipynb')"
 ```
 
-Dependências principais do PLS:
-
-- Python;
-- NumPy;
-- pandas;
-- matplotlib;
-- joblib;
-- scikit-learn.
+As versões das bibliotecas usadas na rodada final estão em [`requirements.txt`](requirements.txt).
 
 ## 14. Dicionário dos artefatos
 
@@ -497,10 +490,11 @@ Resultados comuns aos quatro modelos (filtrar `modelo == "PLS"`):
 | Arquivo | Conteúdo |
 |---|---|
 | [`previsoes.csv`](resultados/previsoes.csv) | Uma linha por data prevista: base, modelo, origem, data, passo, valor real, previsto, resíduo e se a origem falhou |
-| [`hiperparametros.csv`](resultados/hiperparametros.csv) | Parâmetros escolhidos, MAE de validação e tempo por base e modelo |
+| [`hiperparametros.csv`](resultados/hiperparametros.csv) | Parâmetros escolhidos, critério de seleção (MAE de validação; no SARIMAX, escore BIC + MAE normalizados) e tempo por base e modelo |
 | [`busca.csv`](resultados/busca.csv) | Todas as configurações testadas |
 | [`mae_por_base.csv`](resultados/mae_por_base.csv) | MAE de teste e posição dentro da base |
-| [`ljung_box.csv`](resultados/ljung_box.csv) | Ljung-Box com os passos agregados |
+| [`ljung_box.csv`](resultados/ljung_box.csv) | Ljung-Box com os passos agregados (20 combinações oficiais) |
+| [`ljung_box_por_passo.csv`](resultados/ljung_box_por_passo.csv) | Ljung-Box por passo de previsão (20 combinações oficiais) |
 | [`importancia_features.csv`](resultados/importancia_features.csv) | Coeficiente padronizado, VIP e permutation importance, com externas marcadas |
 
 Específicos do PLS:

@@ -252,26 +252,28 @@ Os maiores gaps positivos também se concentram em março de 2020: +8,44 USD em 
 | Ações: eventos extremos | Manter e analisar retornos | Podem ser eventos reais relevantes |
 | Brasil: anos sem partidas | Preservar zero, mas sinalizar limitação | Diferencia calendário anual de cobertura efetiva |
 | Brasil: partidas como externa | Usar apenas se disponível ou defasada | Evita usar total anual futuro observado |
-| Bike Sales: intervalo zerado | Confirmar cobertura antes da modelagem final | Pode ser lacuna estrutural, não ausência de demanda |
+| Bike Sales: intervalo zerado | Mantido como zero para preservar a base congelada e documentado como limitação | É lacuna da fonte (o mesmo corte de agosto a dezembro se repete em 2016), não ausência de demanda |
 | Bike Sales: linhas semelhantes | Manter | Não há identificador para provar duplicidade |
 | Microsoft: externas | Não defasar novamente de forma automática | As colunas já contêm a sessão anterior |
 | Correlações | Tratar como descrição, não causalidade | Tendência, escala e exposição podem inflar associações |
 
-## 9. Pontos que precisam de decisão do grupo
+## 9. Pontos levantados na exploração e como foram resolvidos
 
-1. Confirmar se os oito valores anormais de pressão em Delhi devem ser convertidos em ausentes antes da modelagem.
-2. Confirmar se o intervalo de 01/08/2014 a 31/12/2014 da Bike Sales representa ausência real de vendas ou falta de cobertura.
-3. Confirmar se os preços da Pilgrim's Pride são ajustados por dividendos e desdobramentos.
-4. Definir se o alvo anual do Brasil continuará sendo número de vitórias ou se a interpretação será sempre acompanhada da exposição `matches_played`.
-5. Registrar no relatório que as correlações das ações em nível são dominadas por tendência e não constituem evidência preditiva.
+1. **Pressões anormais em Delhi.** Os oito valores foram mantidos na base preparada. PLS e Kalman winsorizam as externas com limites aprendidos só no treino de cada origem; o SARIMAX usa as externas sem tratamento, e o efeito disso é discutido no relatório.
+2. **Intervalo zerado da Bike Sales.** É lacuna de cobertura: a fonte não tem nenhum registro de agosto a dezembro de 2014, e o mesmo corte se repete em 2016. O intervalo foi mantido como zero para não alterar a base congelada e está documentado como limitação no relatório (119 dias caem no fim da validação e 34 no início do teste).
+3. **Ajuste dos preços da Pilgrim's Pride por dividendos e desdobramentos.** Não foi possível confirmar com a fonte; fica registrado como limitação.
+4. **Alvo do Brasil.** Mantido como número de vitórias por ano, com `matches_played` e `friendly_matches` como externas defasadas em um ano.
+5. **Correlações das ações em nível.** O relatório trata as correlações como descrição, não como evidência preditiva.
 
 ## 10. Artefatos reproduzíveis
 
-O `prepare_bases.ipynb` produz os arquivos preparados, as dez figuras desta análise e quatro tabelas auxiliares:
+O `prepare_bases.ipynb` produz os arquivos preparados, as dez figuras desta análise e seis tabelas auxiliares:
 
 - `resultados/item_5_1/estatisticas_descritivas.csv`
 - `resultados/item_5_1/correlacoes_alvo_externas.csv`
 - `resultados/item_5_1/extremos_alvo.csv`
 - `resultados/item_5_1/checagens_especificas.csv`
+- `resultados/item_5_1/dicionario_variaveis.csv`
+- `resultados/item_5_1/decisoes_limpeza.csv`
 
 O `pipeline.ipynb` permanece responsável pelas etapas de modelagem. Essa separação evita repetir lógica e mantém a preparação auditável.

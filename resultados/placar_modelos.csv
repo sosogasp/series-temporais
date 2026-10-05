@@ -1,5 +1,5 @@
 modelo,vitorias,posicao_media,melhor_posicao,pior_posicao,bases
-Holt-Winters,2,2.0,1,4,5
-SARIMAX,2,2.0,1,3,5
-Random Forest,1,3.0,1,4,5
-PLS,0,3.0,2,4,5
+Holt-Winters,3,1.8,1,4,5
+SARIMAX,1,2.6,1,4,5
+Random Forest,1,2.8,1,4,5
+PLS,0,2.8,2,4,5

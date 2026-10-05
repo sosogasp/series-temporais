@@ -1,32 +1,32 @@
 base,modelo,modelo_base,bonus,cenario_sazonal,m,params,criterio,valor,segundos,versao
-delhi_temperatura,Holt-Winters,Holt-Winters,False,padrao,30,"{'trend': 'add', 'seasonal': None, 'damped': True}",MAE validacao,2.0103298669817256,9.7,kalman_fourier_acf_v2
-delhi_temperatura,Random Forest,Random Forest,False,padrao,30,"{'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",MAE validacao,1.6678284960577148,146.9,kalman_fourier_acf_v2
-delhi_temperatura,PLS,PLS,False,padrao,30,{'n_components': 20},MAE validacao,1.916147627761664,3.2,kalman_fourier_acf_v2
-pilgrims_close,SARIMAX,SARIMAX,False,padrao,1,"{'order': (1, 1, 0), 'seasonal_order': (0, 0, 0, 0)}",BIC+MAE normalizados,1.032937140386145e-06,262.6,kalman_fourier_acf_v2
-pilgrims_close,Holt-Winters,Holt-Winters,False,padrao,1,"{'trend': None, 'seasonal': None, 'damped': False}",MAE validacao,0.3078068490971673,6.1,kalman_fourier_acf_v2
-pilgrims_close,Random Forest,Random Forest,False,padrao,1,"{'n_estimators': 300, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",MAE validacao,0.4972813868123311,2414.5,kalman_fourier_acf_v2
-pilgrims_close,Random Forest | Fourier+ACF m=2275,Random Forest,True,fourier_acf,2275,"{'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",MAE validacao,0.5083691752084857,2782.7,kalman_fourier_acf_v2
-pilgrims_close,PLS,PLS,False,padrao,1,{'n_components': 19},MAE validacao,0.4970976752801611,13.7,kalman_fourier_acf_v2
-pilgrims_close,PLS | Fourier+ACF m=2275,PLS,True,fourier_acf,2275,{'n_components': 20},MAE validacao,0.5035978521533019,12.8,kalman_fourier_acf_v2
-microsoft_open,SARIMAX,SARIMAX,False,padrao,30,"{'order': (0, 0, 0), 'seasonal_order': (2, 0, 0, 30)}",BIC+MAE normalizados,0.5142263616689173,1142.4,kalman_fourier_acf_v2
-microsoft_open,Holt-Winters,Holt-Winters,False,padrao,30,"{'trend': 'add', 'seasonal': 'mul', 'damped': False}",MAE validacao,1.295293255822059,81.1,kalman_fourier_acf_v2
-microsoft_open,Random Forest,Random Forest,False,padrao,30,"{'n_estimators': 300, 'max_depth': 12, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 1}",MAE validacao,1.2255158670742587,425.4,kalman_fourier_acf_v2
-microsoft_open,Random Forest | Fourier+ACF m=176,Random Forest,True,fourier_acf,176,"{'n_estimators': 600, 'max_depth': 12, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 1}",MAE validacao,1.2694585052747756,684.5,kalman_fourier_acf_v2
-microsoft_open,PLS,PLS,False,padrao,30,{'n_components': 13},MAE validacao,1.1953955086744317,4.0,kalman_fourier_acf_v2
-microsoft_open,PLS | Fourier+ACF m=176,PLS,True,fourier_acf,176,{'n_components': 13},MAE validacao,1.120075275544052,3.8,kalman_fourier_acf_v2
-sales_profit,SARIMAX,SARIMAX,False,padrao,12,"{'order': (0, 1, 2), 'seasonal_order': (0, 0, 2, 12)}",BIC+MAE normalizados,0.4607714034289983,162.9,kalman_fourier_acf_v2
-sales_profit,Holt-Winters,Holt-Winters,False,padrao,12,"{'trend': None, 'seasonal': None, 'damped': False}",MAE validacao,4081.372089788592,3.6,kalman_fourier_acf_v2
-sales_profit,Random Forest,Random Forest,False,padrao,12,"{'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",MAE validacao,4079.1004465409474,174.8,kalman_fourier_acf_v2
-sales_profit,PLS,PLS,False,padrao,12,{'n_components': 5},MAE validacao,4791.285730283433,2.8,kalman_fourier_acf_v2
-brasil_vitorias,SARIMAX,SARIMAX,False,padrao,4,"{'order': (0, 1, 2), 'seasonal_order': (0, 0, 2, 4)}",BIC+MAE normalizados,0.2161717906922945,2.7,kalman_fourier_acf_v2
-brasil_vitorias,Holt-Winters,Holt-Winters,False,padrao,4,"{'trend': None, 'seasonal': 'add', 'damped': False}",MAE validacao,2.661660187739533,0.7,kalman_fourier_acf_v2
-brasil_vitorias,Random Forest,Random Forest,False,padrao,4,"{'n_estimators': 300, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1}",MAE validacao,2.8749685990338163,16.2,kalman_fourier_acf_v2
-brasil_vitorias,PLS,PLS,False,padrao,4,{'n_components': 1},MAE validacao,2.8374431044232136,1.0,kalman_fourier_acf_v2
-delhi_temperatura,Kalman,Kalman,True,padrao,30,"{'q_rel': 1e-05, 'r_rel': 0.5}",MAE validacao,1.9910125425727545,4.6,correcao_incremental_v3
-pilgrims_close,Kalman,Kalman,True,padrao,1,"{'q_rel': 0.0001, 'r_rel': 2.0}",MAE validacao,0.4994436243868297,22.5,correcao_incremental_v3
-pilgrims_close,Kalman | Fourier+ACF m=2275,Kalman,True,fourier_acf,2275,"{'q_rel': 0.0001, 'r_rel': 1.0}",MAE validacao,0.5015392517112588,22.5,correcao_incremental_v3
-microsoft_open,Kalman,Kalman,True,padrao,30,"{'q_rel': 1e-05, 'r_rel': 2.0}",MAE validacao,0.7238909007713957,16.4,correcao_incremental_v3
-microsoft_open,Kalman | Fourier+ACF m=176,Kalman,True,fourier_acf,176,"{'q_rel': 1e-05, 'r_rel': 0.5}",MAE validacao,0.7275241462946762,15.3,correcao_incremental_v3
-sales_profit,Kalman,Kalman,True,padrao,12,"{'q_rel': 1e-05, 'r_rel': 2.0}",MAE validacao,4753.251348266059,4.2,correcao_incremental_v3
-brasil_vitorias,Kalman,Kalman,True,padrao,4,"{'q_rel': 0.001, 'r_rel': 2.0}",MAE validacao,4.082147482138026,0.4,correcao_incremental_v3
-delhi_temperatura,SARIMAX,SARIMAX,False,padrao,30,"{'order': (1, 1, 2), 'seasonal_order': (0, 0, 2, 30)}",BIC+MAE normalizados,0.3265027116984424,1243.0,correcao_incremental_v3
+delhi_temperatura,SARIMAX,SARIMAX,False,padrao,30,"{'order': (1, 1, 2), 'seasonal_order': (0, 0, 2, 30)}",BIC+MAE normalizados,0.32651080266147636,4848.6,entrega_final
+delhi_temperatura,Holt-Winters,Holt-Winters,False,padrao,30,"{'trend': 'add', 'seasonal': None, 'damped': True}",MAE validacao,2.0103298669817256,9.7,entrega_final
+delhi_temperatura,Random Forest,Random Forest,False,padrao,30,"{'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 2}",MAE validacao,1.6678284960577148,146.9,entrega_final
+delhi_temperatura,PLS,PLS,False,padrao,30,{'n_components': 20},MAE validacao,1.916147627761664,3.2,entrega_final
+delhi_temperatura,Kalman,Kalman,True,padrao,30,"{'q_rel': 0.0001, 'r_rel': 2.0}",MAE validacao,1.984843146046457,35.6,entrega_final
+pilgrims_close,SARIMAX,SARIMAX,False,padrao,1,"{'order': (1, 1, 0), 'seasonal_order': (0, 0, 0, 0)}",BIC+MAE normalizados,1.032937140386145e-06,262.6,entrega_final
+pilgrims_close,Holt-Winters,Holt-Winters,False,padrao,1,"{'trend': None, 'seasonal': None, 'damped': False}",MAE validacao,0.3078068490971673,6.1,entrega_final
+pilgrims_close,Random Forest,Random Forest,False,padrao,1,"{'n_estimators': 300, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",MAE validacao,0.49728138681233114,2414.5,entrega_final
+pilgrims_close,Random Forest | Fourier+ACF m=2275,Random Forest,True,fourier_acf,2275,"{'n_estimators': 600, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",MAE validacao,0.5083691752084857,2782.7,entrega_final
+pilgrims_close,PLS,PLS,False,padrao,1,{'n_components': 19},MAE validacao,0.49709767528016113,13.7,entrega_final
+pilgrims_close,PLS | Fourier+ACF m=2275,PLS,True,fourier_acf,2275,{'n_components': 20},MAE validacao,0.5035978521533019,12.8,entrega_final
+pilgrims_close,Kalman,Kalman,True,padrao,1,"{'q_rel': 1e-05, 'r_rel': 2.0}",MAE validacao,0.5211159461014716,130.0,entrega_final
+pilgrims_close,Kalman | Fourier+ACF m=2275,Kalman,True,fourier_acf,2275,"{'q_rel': 0.0001, 'r_rel': 2.0}",MAE validacao,0.5132018572632838,140.6,entrega_final
+microsoft_open,SARIMAX,SARIMAX,False,padrao,30,"{'order': (0, 0, 0), 'seasonal_order': (2, 0, 0, 30)}",BIC+MAE normalizados,0.5142263616689173,1142.4,entrega_final
+microsoft_open,Holt-Winters,Holt-Winters,False,padrao,30,"{'trend': 'add', 'seasonal': 'mul', 'damped': False}",MAE validacao,1.2952932558220587,81.1,entrega_final
+microsoft_open,Random Forest,Random Forest,False,padrao,30,"{'n_estimators': 300, 'max_depth': 12, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 1}",MAE validacao,1.2255158670742587,425.4,entrega_final
+microsoft_open,Random Forest | Fourier+ACF m=176,Random Forest,True,fourier_acf,176,"{'n_estimators': 600, 'max_depth': 12, 'max_features': 0.5, 'min_samples_split': 5, 'min_samples_leaf': 1}",MAE validacao,1.2694585052747756,684.5,entrega_final
+microsoft_open,PLS,PLS,False,padrao,30,{'n_components': 13},MAE validacao,1.1953955086744315,4.0,entrega_final
+microsoft_open,PLS | Fourier+ACF m=176,PLS,True,fourier_acf,176,{'n_components': 13},MAE validacao,1.120075275544052,3.8,entrega_final
+microsoft_open,Kalman,Kalman,True,padrao,30,"{'q_rel': 0.001, 'r_rel': 2.0}",MAE validacao,0.9834756698912362,103.7,entrega_final
+microsoft_open,Kalman | Fourier+ACF m=176,Kalman,True,fourier_acf,176,"{'q_rel': 0.0001, 'r_rel': 0.5}",MAE validacao,1.0547502298771931,97.6,entrega_final
+sales_profit,SARIMAX,SARIMAX,False,padrao,12,"{'order': (0, 1, 2), 'seasonal_order': (0, 0, 2, 12)}",BIC+MAE normalizados,0.4607714034289983,162.9,entrega_final
+sales_profit,Holt-Winters,Holt-Winters,False,padrao,12,"{'trend': None, 'seasonal': None, 'damped': False}",MAE validacao,4081.372089788592,3.6,entrega_final
+sales_profit,Random Forest,Random Forest,False,padrao,12,"{'n_estimators': 600, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 5, 'min_samples_leaf': 1}",MAE validacao,4079.1004465409474,174.8,entrega_final
+sales_profit,PLS,PLS,False,padrao,12,{'n_components': 5},MAE validacao,4791.285730283433,2.8,entrega_final
+sales_profit,Kalman,Kalman,True,padrao,12,"{'q_rel': 0.0001, 'r_rel': 2.0}",MAE validacao,4625.290329404206,30.6,entrega_final
+brasil_vitorias,SARIMAX,SARIMAX,False,padrao,4,"{'order': (0, 1, 2), 'seasonal_order': (0, 0, 2, 4)}",BIC+MAE normalizados,0.21617179069229459,2.7,entrega_final
+brasil_vitorias,Holt-Winters,Holt-Winters,False,padrao,4,"{'trend': None, 'seasonal': 'add', 'damped': False}",MAE validacao,2.661660187739533,0.7,entrega_final
+brasil_vitorias,Random Forest,Random Forest,False,padrao,4,"{'n_estimators': 300, 'max_depth': 12, 'max_features': 'sqrt', 'min_samples_split': 2, 'min_samples_leaf': 1}",MAE validacao,2.8749685990338163,16.2,entrega_final
+brasil_vitorias,PLS,PLS,False,padrao,4,{'n_components': 1},MAE validacao,2.8374431044232136,1.0,entrega_final
+brasil_vitorias,Kalman,Kalman,True,padrao,4,"{'q_rel': 0.001, 'r_rel': 2.0}",MAE validacao,3.7645689962852775,3.5,entrega_final

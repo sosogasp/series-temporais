@@ -1,21 +1,21 @@
 base,modelo,MAE,posicao
 brasil_vitorias,Holt-Winters,2.644506355581009,1
-brasil_vitorias,PLS,2.6773833071902144,2
+brasil_vitorias,PLS,2.677383307190214,2
 brasil_vitorias,SARIMAX,2.8590080286359503,3
 brasil_vitorias,Random Forest,2.904827690407236,4
-delhi_temperatura,SARIMAX,1.8252365644733708,1
-delhi_temperatura,Holt-Winters,1.884667805405557,2
-delhi_temperatura,PLS,1.9812694875036505,3
-delhi_temperatura,Random Forest,2.021252597219686,4
+delhi_temperatura,Holt-Winters,1.884667805405557,1
+delhi_temperatura,PLS,1.9812694875036498,2
+delhi_temperatura,Random Forest,2.021252597219686,3
+delhi_temperatura,SARIMAX,2.0259009515739987,4
 microsoft_open,SARIMAX,1.5025858420089313,1
-microsoft_open,Random Forest,2.321319901965061,2
+microsoft_open,Random Forest,2.3213199019650617,2
 microsoft_open,PLS,2.4949676731214083,3
 microsoft_open,Holt-Winters,2.615845436159464,4
 pilgrims_close,Holt-Winters,0.6161023035115002,1
-pilgrims_close,SARIMAX,0.6173617993577346,2
+pilgrims_close,SARIMAX,0.6173617993577347,2
 pilgrims_close,PLS,0.8292400830585303,3
 pilgrims_close,Random Forest,0.8615415511561871,4
 sales_profit,Random Forest,5479.243924551781,1
-sales_profit,Holt-Winters,5686.6980415623,2
-sales_profit,SARIMAX,5720.227526740267,3
+sales_profit,Holt-Winters,5686.698041562301,2
+sales_profit,SARIMAX,5720.227526740268,3
 sales_profit,PLS,5974.186727838727,4

@@ -1,24 +1,15 @@
 item,aprovado,evidência
-14 seções de 10.1,sim,14 seções
-5 bases oficiais,sim,5 bases
-4 modelos oficiais,sim,4 modelos
+14 seções da estrutura 10.1,sim,14 seções
 20 combinações oficiais,sim,20 linhas
-Ljung-Box oficial 20 linhas,sim,20 linhas
-Resíduo+ACF 20 gráficos,sim,20 gráficos
-STL 5 bases,sim,5 gráficos
-Alvo+externas 5 bases,sim,5 gráficos
-Importância RF/PLS,sim,"PLS, Random Forest"
-SHA256 5 bases,sim,5 checksums
-Markdown/HTML isoestruturais,sim,mesmos títulos
-Kalman/Fourier separados como bônus,sim,seção 14
-Sem URLs inventadas,sim,5 fontes locais
-Registro sem marcador de ausência genérico,sim,evidência não localizada
-HTML A4 landscape,sim,CSS @page
-Qualidade das bases,sim,5 diagnósticos
-Espaço de busca,sim,20 combinações
-Paridade de origens walk-forward,sim,5/5 bases
-Três gráficos sintéticos,sim,"diagrama, MAE e importância"
-Referências técnicas,sim,"FPP3, statsmodels, sklearn, Ljung-Box"
-Declaração de uso de IA,sim,seção 14
-Quatro saídas em relatorio/,sim,"RELATORIO.md, HTML, PDF e checklist"
-PDF via Chrome,sim,/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Origens idênticas entre modelos,sim,5/5 bases
+Ljung-Box agregado e por passo,sim,20 + 20 linhas
+Resíduos + ACF das 20 combinações,sim,20 gráficos
+STL das 5 bases,sim,5 gráficos
+Alvo + externas das 5 bases,sim,5 gráficos
+Importância RF e PLS,sim,"permutation, nativa, VIP, coeficientes"
+Fontes com URL,sim,5 links
+Registro com as 7 colunas do item 12,sim,29 demandas
+Todo integrante no registro,sim,5 integrantes
+Markdown e HTML com os mesmos títulos,sim,14 títulos
+Sem imagens ou scripts externos no HTML,sim,autocontido
+PDF gerado do mesmo HTML,sim,C:\Program Files\Google\Chrome\Application\chrome.exe

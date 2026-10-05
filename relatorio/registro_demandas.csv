@@ -1,0 +1,30 @@
+Data,Integrante,Demanda realizada,Entrega ou evidência,Carga de trabalho,Complexidade,Status
+10/09/2026,Fernando Paiva,Organização geral do projeto,relato do integrante (sem arquivo),Baixa,Baixa,Concluída
+10/09/2026,Giovanna Pelati,Organização geral do projeto,relato do integrante (sem arquivo),Baixa,Baixa,Concluída
+10/09/2026,João Vargas,Organização geral do projeto,relato do integrante (sem arquivo),Baixa,Baixa,Concluída
+10/09/2026,Matheus Cury,Organização geral do projeto,relato do integrante (sem arquivo),Baixa,Baixa,Concluída
+10/09/2026,Sophia Gasparetto,Organização geral e pesquisa das bases,relato do integrante (sem arquivo),Baixa,Baixa,Concluída
+15/09/2026,Sophia Gasparetto,Criação do repositório e inclusão das bases brutas,commits 6570257 e b977dc5; bases/raw/,Baixa,Baixa,Concluída
+15/09/2026,Matheus Cury,Estrutura inicial do pipeline.ipynb (leitura das bases e esqueleto das etapas),commit d8372a1; pipeline.ipynb,Média,Média,Concluída
+15/09/2026,Fernando Paiva,Definição das especificações e das bases,relato do integrante (sem arquivo),Média,Média,Concluída
+15/09/2026,João Vargas,Estudo e documentação do projeto,relato do integrante (sem arquivo),Média,Baixa,Concluída
+17/09/2026,Matheus Cury,Regras fixas do grupo: random_state=42 e separação 70-30 em treino/validação/teste,commit 110802c; pipeline.ipynb (seções 0 e 1),Baixa,Baixa,Concluída
+17/09/2026,Matheus Cury,Seleção do SARIMAX por BIC com desempate por MAE de validação,commit 24a7206; pipeline.ipynb (seção 3.5),Média,Média,Concluída
+17/09/2026,Matheus Cury,Escolha do período sazonal m pela força da STL em vez de m fixo,commit 4d5fb42; pipeline.ipynb (seção 2.3),Média,Média,Concluída
+17/09/2026,Sophia Gasparetto,Notebook reprodutível de preparação das cinco bases,commit 6a597fc; prepare_bases.ipynb; bases/*_prepared.csv,Alta,Média,Concluída
+17/09/2026,Fernando Paiva,Adição de elementos na pipeline padrão,relato do integrante; pipeline.ipynb,Média,Média,Concluída
+17/09/2026,João Vargas,Base do relatório e entendimento da pipeline,relato do integrante (sem arquivo),Média,Baixa,Concluída
+22/09/2026,Sophia Gasparetto,Correção da preparação das bases Brasil e Sales,commit 25dd002; bases/brazil_prepared.csv; bases/sales_prepared.csv,Média,Média,Concluída
+22/09/2026,Matheus Cury,Registro das cinco bases no pipeline com horizonte e exógenas,commit 9bb436d; pipeline.ipynb (seção 1),Média,Média,Concluída
+22/09/2026,Giovanna Pelati,Revisão da pipeline e início da implementação do modelo de especialização,relato do integrante; pipeline.ipynb,Média,Média,Concluída
+24/09/2026,Matheus Cury,Análise prévia completa (STL; ADF/KPSS; VIF) e correção do mapeamento das exógenas,commit 42c20ab; resultados/decisoes_analise.csv; resultados/disponibilidade_exogenas.csv,Alta,Alta,Concluída
+24/09/2026,Matheus Cury,Importância das features (RF nativa e permutation; PLS; coeficientes SARIMAX; estado Holt-Winters),commit f0bbcec; resultados/importancia_features.csv,Média,Média,Concluída
+24/09/2026,Matheus Cury,Primeira rodada de treino dos modelos,commit ab660c4; pipeline.ipynb,Média,Média,Concluída
+24/09/2026,Giovanna Pelati,Estudo e documentação do PLS,relato do integrante; DOCUMENTACAO_PLS.md (versionado no commit f494704),Média,Alta,Concluída
+25/09/2026,Matheus Cury,Rodada completa do pipeline (5 bases x 4 modelos) com caches do SARIMAX,commit fc30f94; resultados/previsoes.csv; resultados/hiperparametros.csv,Alta,Média,Concluída
+27/09/2026,João Vargas,Primeira versão do relatório (Markdown; HTML; PDF) e tabelas de MAE e Ljung-Box,commit ee95811; relatorio/RELATORIO.md; relatorio/relatorio.html; relatorio/relatorio.pdf,Alta,Média,Concluída
+28/09/2026,Giovanna Pelati,Implementação do PLS (remoção de redundâncias; winsorização das externas; grade até o posto de X; VIP),commits f494704 e 8b9cf34; pipeline.ipynb (seções 3.8 e 4.6); DOCUMENTACAO_PLS.md,Alta,Alta,Concluída
+29/09/2026,Sophia Gasparetto,Exploração aprofundada das bases (item 5.1): estatísticas; checagens de consistência; painéis,commit 4e042e6; relatorio/item_5_1_documentacao_exploracao.md; resultados/item_5_1/,Alta,Média,Concluída
+01/10/2026,Matheus Cury,Bônus Kalman e Fourier+ACF; checkpoints; gerador do relatório; consolidação dos artefatos,commit 6baec99; pipeline.ipynb (seções 2.3B; 3.9; 3.10; 5),Alta,Alta,Concluída
+04/10/2026,Giovanna Pelati,Revisão final: reexecução isolada dos notebooks e verificação de reprodutibilidade das 31 configurações,reexecução dos notebooks em cópia isolada; comparação das previsões com resultados/previsoes.csv,Alta,Alta,Concluída
+05/10/2026,Giovanna Pelati,Correção da divergência código x resultados (SARIMAX sem winsorização; Kalman refeito); limpeza do repositório; relatório final,pipeline.ipynb; resultados/; relatorio/; README.md,Alta,Alta,Concluída

@@ -1,32 +1,32 @@
 base,modelo,modelo_base,cenario_sazonal,MAE,posicao
 brasil_vitorias,Holt-Winters,Holt-Winters,padrao,2.644506355581009,1
-brasil_vitorias,PLS,PLS,padrao,2.6773833071902144,2
+brasil_vitorias,PLS,PLS,padrao,2.677383307190214,2
 brasil_vitorias,SARIMAX,SARIMAX,padrao,2.8590080286359503,3
 brasil_vitorias,Random Forest,Random Forest,padrao,2.904827690407236,4
-brasil_vitorias,Kalman,Kalman,padrao,3.258757895842955,5
-delhi_temperatura,SARIMAX,SARIMAX,padrao,1.8252365644733708,1
-delhi_temperatura,Holt-Winters,Holt-Winters,padrao,1.884667805405557,2
-delhi_temperatura,PLS,PLS,padrao,1.9812694875036505,3
-delhi_temperatura,Kalman,Kalman,padrao,2.020218848646752,4
-delhi_temperatura,Random Forest,Random Forest,padrao,2.021252597219686,5
+brasil_vitorias,Kalman,Kalman,padrao,3.275616311350807,5
+delhi_temperatura,Holt-Winters,Holt-Winters,padrao,1.884667805405557,1
+delhi_temperatura,Kalman,Kalman,padrao,1.9296516100269254,2
+delhi_temperatura,PLS,PLS,padrao,1.9812694875036498,3
+delhi_temperatura,Random Forest,Random Forest,padrao,2.021252597219686,4
+delhi_temperatura,SARIMAX,SARIMAX,padrao,2.0259009515739987,5
 microsoft_open,SARIMAX,SARIMAX,padrao,1.5025858420089313,1
-microsoft_open,Random Forest,Random Forest,padrao,2.321319901965061,2
-microsoft_open,Kalman | Fourier+ACF m=176,Kalman,fourier_acf,2.335195749722033,3
-microsoft_open,Random Forest | Fourier+ACF m=176,Random Forest,fourier_acf,2.341081599994776,4
-microsoft_open,PLS | Fourier+ACF m=176,PLS,fourier_acf,2.41477908475491,5
-microsoft_open,Kalman,Kalman,padrao,2.461135242847564,6
+microsoft_open,Kalman | Fourier+ACF m=176,Kalman,fourier_acf,2.1754781683585462,2
+microsoft_open,Kalman,Kalman,padrao,2.2042096830399647,3
+microsoft_open,Random Forest,Random Forest,padrao,2.3213199019650617,4
+microsoft_open,Random Forest | Fourier+ACF m=176,Random Forest,fourier_acf,2.341081599994776,5
+microsoft_open,PLS | Fourier+ACF m=176,PLS,fourier_acf,2.4147790847549104,6
 microsoft_open,PLS,PLS,padrao,2.4949676731214083,7
 microsoft_open,Holt-Winters,Holt-Winters,padrao,2.615845436159464,8
 pilgrims_close,Holt-Winters,Holt-Winters,padrao,0.6161023035115002,1
-pilgrims_close,SARIMAX,SARIMAX,padrao,0.6173617993577346,2
+pilgrims_close,SARIMAX,SARIMAX,padrao,0.6173617993577347,2
 pilgrims_close,PLS,PLS,padrao,0.8292400830585303,3
 pilgrims_close,PLS | Fourier+ACF m=2275,PLS,fourier_acf,0.8303354818873588,4
 pilgrims_close,Random Forest | Fourier+ACF m=2275,Random Forest,fourier_acf,0.8487304730291791,5
-pilgrims_close,Kalman,Kalman,padrao,0.8602787795361794,6
-pilgrims_close,Random Forest,Random Forest,padrao,0.8615415511561871,7
-pilgrims_close,Kalman | Fourier+ACF m=2275,Kalman,fourier_acf,0.865949779688511,8
+pilgrims_close,Random Forest,Random Forest,padrao,0.8615415511561871,6
+pilgrims_close,Kalman | Fourier+ACF m=2275,Kalman,fourier_acf,0.870564628002846,7
+pilgrims_close,Kalman,Kalman,padrao,0.8858591971234688,8
 sales_profit,Random Forest,Random Forest,padrao,5479.243924551781,1
-sales_profit,Holt-Winters,Holt-Winters,padrao,5686.6980415623,2
-sales_profit,SARIMAX,SARIMAX,padrao,5720.227526740267,3
+sales_profit,Holt-Winters,Holt-Winters,padrao,5686.698041562301,2
+sales_profit,SARIMAX,SARIMAX,padrao,5720.227526740268,3
 sales_profit,PLS,PLS,padrao,5974.186727838727,4
-sales_profit,Kalman,Kalman,padrao,6706.893291393772,5
+sales_profit,Kalman,Kalman,padrao,6496.098658846976,5
